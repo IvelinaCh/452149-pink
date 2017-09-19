@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ивелина Чекаурова](https://up.htmlacademy.ru/adaptive/12/user/452149).
-* Наставник: `Неизвестно`.
+* Наставник: [Степан Нарышков](https://up.htmlacademy.ru/htmlcss/18/user/95962).
 
 ---
 
