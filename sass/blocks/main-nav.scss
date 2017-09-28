@@ -1,0 +1,33 @@
+.main-nav {
+  text-align: center;
+  background-color: #283645;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item a {
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle--open {
+  width: 50px;
+  height: 24px;
+  border: none;
+  background: transparent url("../img/icon-menu-burger.svg");
+}
+
+.main-nav__toggle--close {
+  width: 24px;
+  height: 32px;
+  border: none;
+  background: transparent url("../img/icon-map-cross.svg");
+}

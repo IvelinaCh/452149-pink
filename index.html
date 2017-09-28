@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>PINK</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,7 +12,12 @@
         <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a>Главная</a>
@@ -30,13 +36,22 @@
           <a class="download-list__button button" href="https://www.apple.com/ru/itunes/charts/paid-apps/">Скачать приложение</a>
           <ul class="main-nav__list download-list">
             <li class="download-list__item download-list__item--iphone">
-              <a href="https://www.apple.com/ru/itunes/charts/paid-apps/">Скачать для iPhone</a>
+              <a href="https://www.apple.com/ru/itunes/charts/paid-apps/">
+                <span class="visually-hidden">Скачать для iPhone</span>
+                <img class="download-list__icon" src="img/logo-apple.svg" width="47" height="56" alt="iPhone">
+              </a>
             </li>
             <li class="download-list__item download-list__item--android">
-              <a href="https://play.google.com/store/apps">Скачать для Android</a>
+              <a href="https://play.google.com/store/apps">
+                <span class="visually-hidden">Скачать для Android</span>
+                <img class="download-list__icon" src="img/logo-android.svg" width="43" height="47" alt="Android">
+              </a>
             </li>
             <li class="download-list__item download-list__item--windows-phone">
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Скачать для Windows Phone</a>
+              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+                <span class="visually-hidden">Скачать для Windows Phone</span>
+                <img class="download-list__icon" src="img/logo-microsoft.svg" width="44" height="41" alt="Windows Phone">
+              </a>
             </li>
           </ul>
           <p class="page-header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -54,16 +69,16 @@
         <h2 class="visually-hidden">Почему Pink:</h2>
         <ul class="positive-traits__list">
           <li class="positive-traits__item">
-            <h3>Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="caption">Поднимает настроение</h3>
+            <p class="positive-traits__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="positive-traits__item">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликои или текстовой подписью, чтобы усилить эффект</p>
+            <h3 class="caption">Меняет мир вокруг</h3>
+            <p class="positive-traits__text">Сделайте снимок и украсьте его смайликои или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="positive-traits__item">
-            <h3>Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <h3 class="caption">Заводит новых друзей</h3>
+            <p class="positive-traits__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
         <img class="positive-traits__photo" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет">
@@ -73,15 +88,15 @@
           <h2 class="visually-hidden">Отзывы о приложении</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
-              <h3>Николай Петров</h3>
+              <h3 class="caption">Николай Петров</h3>
               <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
             </li>
             <li class="reviews__item slider__item">
-              <h3>2</h3>
+              <h3 class="caption">2</h3>
               <q>2</q>
             </li>
             <li class="reviews__item slider__item">
-              <h3>3</h3>
+              <h3 class="caption">3</h3>
                 <q>3</q>
             </li>
           </ul>
@@ -98,7 +113,7 @@
             <tr>
               <th class="price-list__header slider__item">
                 Стандарт
-                3,99 USD
+                <span class="price-list__usd">3,99 USD</span>
               </th>
             </tr>
             <tr>
@@ -121,7 +136,7 @@
             <tr>
               <th class="price-list__header price-list__header--hit slider__item">
                 Стандарт
-                3,99 USD
+                <span class="price-list__usd">3,99 USD</span>
               </th>
             </tr>
             <tr>
@@ -144,7 +159,7 @@
             <tr>
               <th class="price-list__header slider__item">
                 Стандарт
-                3,99 USD
+                <span class="price-list__usd">3,99 USD</span>
               </th>
             </tr>
             <tr>
@@ -176,15 +191,15 @@
       Свяжитесь с нами!
       </p>
       <section class="page-footer__contacts contacts">
-        <h3>Звоните:</h3>
+        <h3 class="caption">Звоните:</h3>
           <a class="contacts__phone" href="#">
             +7(812)555-66-66
           </a>
-        <h3>Пишите:</h3>
+        <h3 class="caption">Пишите:</h3>
           <a class="contacts__mail" href="https://htmlacademy.ru/contacts">
             mail@htmlacademy.ru
           </a>
-        <h3>Приезжайте в гости:</h3>
+        <h3 class="caption">Приезжайте в гости:</h3>
           <p class="contacts__address">
             ул. Большая Конюшенная, 19/8
           </p>

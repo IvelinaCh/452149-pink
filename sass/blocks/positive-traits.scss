@@ -1,3 +1,23 @@
 .positive-traits {
+  text-align: center;
   background-color: #f2f2f2;
+}
+
+.positive-traits__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.positive-traits__text {
+  font-size: 14px;
+  line-height: 1.333;
+  color: #283645;
+}
+
+.caption {
+  font-size: 18px;
+  line-height: 1.333;
+  color: #000000;
+  font-weight: bold;
 }

@@ -1,6 +1,14 @@
 .page-header {
-  background-color: #08366e;
+  padding: 20px;
+  background-color: #283645;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
   url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.page-header__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: light;
 }

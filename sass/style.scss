@@ -17,3 +17,21 @@
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 @import "blocks/window-modal.scss";
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  font-family: 'Open Sans', "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  background-color: #ffffff;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid;
+  border-radius: 15px;
+}
