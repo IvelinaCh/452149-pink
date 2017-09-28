@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>PINK</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo-href">
-        <img class="page-header__logo" src="http://placehold.it/150x100" width="150" height="101" alt="Pink">
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -25,16 +26,16 @@
             <a href="#">HTML Academy</a>
           </li>
         </ul>
-        <div class="download-wrapper">
-          <a class="download-wrapper__button button" href="https://www.apple.com/ru/itunes/charts/paid-apps/">Скачать приложение</a>
+        <div class="download-list__wrapper">
+          <a class="download-list__button button" href="https://www.apple.com/ru/itunes/charts/paid-apps/">Скачать приложение</a>
           <ul class="main-nav__list download-list">
-            <li class="download-list__item iphone">
+            <li class="download-list__item download-list__item--iphone">
               <a href="https://www.apple.com/ru/itunes/charts/paid-apps/">Скачать для iPhone</a>
             </li>
-            <li class="download-list__item android">
+            <li class="download-list__item download-list__item--android">
               <a href="https://play.google.com/store/apps">Скачать для Android</a>
             </li>
-            <li class="download-list__item windows-phone">
+            <li class="download-list__item download-list__item--windows-phone">
               <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Скачать для Windows Phone</a>
             </li>
           </ul>
@@ -65,7 +66,7 @@
             <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="positive-traits__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Привет">
+        <img class="positive-traits__photo" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -101,17 +102,40 @@
               </th>
             </tr>
             <tr>
-              <td class="price-list__point slider__item">
+              <td class="price-list__point  price-list__point--have slider__item">
                 Розовый фильтр
               </td>
             </tr>
             <tr>
-              <td class="price-list__point slider__item">
+              <td class="price-list__point price-list__point--havent slider__item">
                 Смайлики
               </td>
             </tr>
             <tr>
-              <td class="price-list__point slider__item">
+              <td class="price-list__point price-list__point--havent slider__item">
+                Комментарии
+              </td>
+            </tr>
+          </table>
+          <table class="price-list slider-list">
+            <tr>
+              <th class="price-list__header price-list__header--hit slider__item">
+                Стандарт
+                3,99 USD
+              </th>
+            </tr>
+            <tr>
+              <td class="price-list__point price-list__point--have slider__item">
+                Розовый фильтр
+              </td>
+            </tr>
+            <tr>
+              <td class="price-list__point price-list__point--have slider__item">
+                Смайлики
+              </td>
+            </tr>
+            <tr>
+              <td class="price-list__point price-list__point--havent slider__item">
                 Комментарии
               </td>
             </tr>
@@ -124,40 +148,17 @@
               </th>
             </tr>
             <tr>
-              <td class="price-list__point slider__item">
+              <td class="price-list__point price-list__point--have slider__item">
                 Розовый фильтр
               </td>
             </tr>
             <tr>
-              <td class="price-list__point slider__item">
+              <td class="price-list__point price-list__point--have slider__item">
                 Смайлики
               </td>
             </tr>
             <tr>
-              <td class="price-list__point slider__item">
-                Комментарии
-              </td>
-            </tr>
-          </table>
-          <table class="price-list slider-list">
-            <tr>
-              <th class="price-list__header slider__item">
-                Стандарт
-                3,99 USD
-              </th>
-            </tr>
-            <tr>
-              <td class="price-list__point slider__item">
-                Розовый фильтр
-              </td>
-            </tr>
-            <tr>
-              <td class="price-list__point slider__item">
-                Смайлики
-              </td>
-            </tr>
-            <tr>
-              <td class="price-list__point slider__item">
+              <td class="price-list__point price-list__point--have slider__item">
                 Комментарии
               </td>
             </tr>
@@ -188,8 +189,9 @@
             ул. Большая Конюшенная, 19/8
           </p>
       </section>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" allowfullscreen="">
-      </iframe>
+      <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="150" height="100" alt="map">
+      <!--<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" allowfullscreen="">
+      </iframe>-->
     </footer>
   </body>
 </html>

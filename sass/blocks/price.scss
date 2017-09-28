@@ -1,0 +1,24 @@
+.price {
+  background-color: #f2f2f2;
+}
+
+.price-list__header {
+  background-color: #08366e;
+}
+
+.price-list__header--hit {
+  background-image: url("../img/bg-hit-tablet.svg");
+  background-repeat: no-repeat;
+}
+
+.price-list__point--have {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+}
+
+.price-list__point--havent {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+}
