@@ -1,14 +1,14 @@
 .my-photo {
   padding: 20px;
-  background-color: #f2f2f2;
-}
+  background-color: $lightgray;
 
-.my-photo__edit {
-  border: none;
-}
+  &__edit {
+    border: none;
+  }
 
-.my-photo__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
