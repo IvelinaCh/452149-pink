@@ -2,7 +2,76 @@
   background-color: #ffffff;
 }
 
+.page-main__photo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .page-main__photo-item {
+  padding: 0;
+  margin: 0;
   margin-bottom: 15px;
   background-color: #f2f2f2;
+  text-align: left;
+}
+
+.page-main__text {
+  margin: 0;
+  padding: 50px 35px 60px;
+}
+
+.page-main__cite {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #283645;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.page-main__photo-time {
+  font-size: 12px;
+  line-height: 24px;
+  color: #949aa1;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.page-main__photo-text {
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__blockquote {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.page-main__photo-like {
+  display: inline-block;
+  position: relative;
+  margin: 0 45px 25px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.page-main__photo-like::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -30px;
+  width: 13px;
+  height: 12px;
+  background: url("../img/icon-heart.svg") no-repeat;
+}
+
+.page-main__my-photo-text {
+  margin: 0;
+  padding: 35px 15px 50px;
+  font-size: 14px;
+  line-height: 2.143;
+  color: #283645;
 }

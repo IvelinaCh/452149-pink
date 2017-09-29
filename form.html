@@ -8,16 +8,18 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-href" href="index.html">
-        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo-href" href="index.html">
+            <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">Главная</a>

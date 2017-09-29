@@ -3,10 +3,23 @@
   background-color: #283645;
 }
 
+.main-nav__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #000000;
+}
+
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.main-nav__item {
+  padding: 20px;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #485461;
 }
 
 .main-nav__item a {
@@ -18,16 +31,20 @@
   text-transform: uppercase;
 }
 
+.main-nav__toggle {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .main-nav__toggle--open {
   width: 50px;
   height: 24px;
-  border: none;
-  background: transparent url("../img/icon-menu-burger.svg");
+  background: transparent url("../img/icon-menu-burger.svg") no-repeat;
 }
 
 .main-nav__toggle--close {
   width: 24px;
   height: 32px;
-  border: none;
-  background: transparent url("../img/icon-map-cross.svg");
+  background: transparent url("../img/icon-menu-cross.svg") no-repeat;
 }

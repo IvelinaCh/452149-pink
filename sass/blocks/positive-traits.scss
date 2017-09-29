@@ -1,4 +1,6 @@
 .positive-traits {
+  margin: 0;
+  padding: 0 33px;
   text-align: center;
   background-color: #f2f2f2;
 }
@@ -9,13 +11,18 @@
   padding: 0;
 }
 
+.positive-traits__item {
+  margin-bottom: 40px;
+}
+
 .positive-traits__text {
   font-size: 14px;
-  line-height: 1.333;
+  line-height: 1.5;
   color: #283645;
 }
 
 .caption {
+  margin: 0;
   font-size: 18px;
   line-height: 1.333;
   color: #000000;

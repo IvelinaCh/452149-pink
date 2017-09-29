@@ -8,16 +8,18 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-href">
-        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--open" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo-href">
+            <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a>Главная</a>
@@ -34,7 +36,7 @@
         </ul>
         <div class="download-list__wrapper">
           <a class="download-list__button button" href="https://www.apple.com/ru/itunes/charts/paid-apps/">Скачать приложение</a>
-          <ul class="main-nav__list download-list">
+          <ul class="main-nav__download-list download-list">
             <li class="download-list__item download-list__item--iphone">
               <a href="https://www.apple.com/ru/itunes/charts/paid-apps/">
                 <span class="visually-hidden">Скачать для iPhone</span>
@@ -62,7 +64,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Pink Glasses</h1>
       <section class="offer">
-        <p class="offer__text">Устали отсерости мегаполиса?</p>
+        <p class="offer__text">Устали от серости мегаполиса?</p>
         <p class="offer__text">Нам есть что вам предложить!</p>
       </section>
       <section class="positive-traits">
@@ -89,15 +91,15 @@
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <h3 class="caption">Николай Петров</h3>
-              <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+              <q class="reviews__blockquote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
             </li>
             <li class="reviews__item slider__item">
               <h3 class="caption">2</h3>
-              <q>2</q>
+              <q class="reviews__blockquote">2</q>
             </li>
             <li class="reviews__item slider__item">
               <h3 class="caption">3</h3>
-                <q>3</q>
+              <q class="reviews__blockquote">3</q>
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
@@ -186,25 +188,25 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <p class="page-footer__text">Остались вопросы?
       Свяжитесь с нами!
       </p>
       <section class="page-footer__contacts contacts">
         <h3 class="caption">Звоните:</h3>
-          <a class="contacts__phone" href="#">
+          <a class="contacts__contact contacts__contact--phone" href="#">
             +7(812)555-66-66
           </a>
         <h3 class="caption">Пишите:</h3>
-          <a class="contacts__mail" href="https://htmlacademy.ru/contacts">
+          <a class="contacts__contact contacts__contact--mail" href="https://htmlacademy.ru/contacts">
             mail@htmlacademy.ru
           </a>
         <h3 class="caption">Приезжайте в гости:</h3>
-          <p class="contacts__address">
+          <p class="contacts__contact contacts__contact--address">
             ул. Большая Конюшенная, 19/8
           </p>
       </section>
-      <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="150" height="100" alt="map">
+      <!--<img class="page-footer__map" src="img/bg-map-mobile@2x.png" width="320" height="645" alt="map">
       <!--<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" allowfullscreen="">
       </iframe>-->
     </footer>
