@@ -1,5 +1,4 @@
 .main-nav {
-  text-align: center;
   background-color: $darkblue;
 
   &__list {
@@ -11,15 +10,21 @@
   &__logo-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 22px 20px 15px;
     border-bottom: 1px solid $black;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    margin: auto;
   }
 }
 
 .main-nav__item {
-  padding: 20px;
+  padding: 14px 20px 15px;
   border-bottom: 1px solid $black;
   border-top: 1px solid $darkgray;
+  box-sizing: border-box;
 
   &-href {
     font-size: 18px;

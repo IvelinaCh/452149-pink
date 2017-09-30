@@ -1,3 +1,16 @@
 .radio-list {
+  margin-bottom: 27px;
   background-color: $lightgray;
+
+  &__label {
+    margin-top: -6px;
+    padding:  0 0 52px 55px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $darkblue;
+
+    &:last-child {
+      padding-bottom: 37px;
+    }
+  }
 }

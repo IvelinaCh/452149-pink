@@ -5,6 +5,10 @@
 .price-list {
   border-collapse: collapse;
   margin-bottom: 100px;
+
+  &__usd {
+    font-weight: lighter;
+  }
 }
 
 .price-list__header {
@@ -17,12 +21,12 @@
   color: $white;
   text-transform: uppercase;
   font-weight: bold;
-}
 
-.price-list__header--hit {
-  background-image: url("../img/bg-hit-tablet.svg");
-  background-repeat: no-repeat;
-  background-position: top left;
+  &--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
 }
 
 .price-list__point {
@@ -36,15 +40,12 @@
   background-repeat: no-repeat;
   background-size: 31px 21px;
   background-position: 90% center;
-}
-.price-list__point--have {
-  background-image: url("../img/icon-yes.svg");
-}
 
-.price-list__point--havent {
-  background-image: url("../img/icon-no.svg");
-}
+  &--have {
+    background-image: url("../img/icon-yes.svg");
+  }
 
-.price-list__usd {
-  font-weight: lighter;
+  &--havent {
+    background-image: url("../img/icon-no.svg");
+  }
 }

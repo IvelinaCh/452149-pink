@@ -14,3 +14,17 @@
   background-image: url("../img/bg-map-mobile@2x.png");
   background-repeat: no-repeat;
 }
+
+.page-footer__logo {
+  margin: 0 0 30px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 90px 45px;
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 18px;
+}

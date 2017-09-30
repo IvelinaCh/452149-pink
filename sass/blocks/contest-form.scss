@@ -1,0 +1,76 @@
+.contest-form__label {
+  display: block;
+  margin: 0 30px 5px;
+  font-size: 14px;
+  line-height: 2.143;
+  text-align: left;
+  color: $rose;
+  text-transform: uppercase;
+}
+
+.contest-form__wrapper {
+  margin-bottom: 15px;
+  border: none;
+
+  &-name {
+    margin: 0;
+    padding: 40px 15px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $rose;
+    text-transform: uppercase;
+  }
+}
+
+.contest-form__input {
+  width: 280px;
+  border: 2px solid $ligtergray;
+  box-sizing: border-box;
+
+  &--text {
+    margin: 0 0 17px;
+    padding: 23px 20px 20px;
+  }
+
+  &--area {
+    min-height: 200px;
+    margin: 11px 0 15px;
+    padding: 15px 18px 18px;
+    resize: none;
+    overflow: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.667;
+    color: $darkblue;
+  }
+}
+
+.contest-form__button {
+  margin: 0 0 35px;
+  padding: 16px 0 17px;
+  width: 280px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $green;
+  border: none;
+  box-sizing: border-box;
+}
+
+.contest-form__text {
+  margin: 0 0 55px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &--star {
+    color: $rose;
+  }
+}

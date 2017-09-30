@@ -34,35 +34,37 @@
             <a class="main-nav__item-href" href="#">HTML Academy</a>
           </li>
         </ul>
-        <h1 class="page-header__title">
+        <p class="page-header__title page-header__title--text">
           Конкурс на самое безбашенное путешествие с Пинк
-        </h1>
+        </p>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Данные для участия</h1>
-        <p class="page-main__text">
-        Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+        <p class="page-main__title-form">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <form class="page-main__form contest-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="contest-form__wrapper">
             <label class="contest-form__label" for="lastname">
               Фамилия:
             </label>
-            <input class="contest-form__input" type="text" placeholder="Укажите фамилию*" id="lastname" name="lastname" required>
+            <input class="contest-form__input contest-form__input--text" type="text" placeholder="Укажите фамилию*" id="lastname" name="lastname" required>
             <label class="contest-form__label" for="name">
               Имя:
             </label>
-            <input class="contest-form__input" type="text" placeholder="Введите ваше имя*" id="name" name="name" required>
+            <input class="contest-form__input contest-form__input--text" type="text" placeholder="Введите ваше имя*" id="name" name="name" required>
             <label class="contest-form__label" for="patronymic">
               Отчество:
             </label>
-            <input class="contest-form__input" type="text" placeholder="Ну и отчество тоже" id="patronymic" name="patronymic">
+            <input class="contest-form__input contest-form__input--text" type="text" placeholder="Ну и отчество тоже" id="patronymic" name="patronymic">
           </fieldset>
-          <fieldset class="contest-form__checks checks">
-            <legend class="checks__name">
+          <div class="container">
+          <fieldset class="contest-form__wrapper checks">
+            <legend class="contest-form__wrapper-name">
               Ваши безбашенные достижения в путешествии
             </legend>
+              <div class="flex-container">
               <input class="checks__input visually-hidden" type="checkbox" id="check1" name="check1" checked>
                 <label class="checks__label" for="check1">Сделал селфи с акулой
                 </label>
@@ -81,21 +83,25 @@
               <input class="checks__input visually-hidden" type="checkbox" id="check6" name="check6">
                 <label class="checks__label" for="check6">Разгромил отель
                 </label>
+              </div>
           </fieldset>
+          </div>
           <fieldset class="contest-form__wrapper">
             <label class="contest-form__label" for="tel">
               Номер телефона
             </label>
-            <input class="contest-form__input" type="text" placeholder="Номер, пожалуйста" id="tel" name="tel" required>
+            <input class="contest-form__input contest-form__input--text" type="text" placeholder="Номер, пожалуйста" id="tel" name="tel" required>
             <label class="contest-form__label" for="address">
               Адрес почты
             </label>
-            <input class="contest-form__input" type="text" placeholder="Введите почту*" id="address" name="address" required>
+            <input class="contest-form__input contest-form__input--text" type="text" placeholder="Введите почту*" id="address" name="address" required>
           </fieldset>
-          <fieldset class="contest-form__radio radio-list">
-            <legend class="radio-list__name">
+          <div class="container">
+          <fieldset class="contest-form__wrapper radio-list">
+            <legend class="contest-form__wrapper-name">
               С каким приложением путешествовали?
             </legend>
+            <div class="flex-container">
               <input class="radio-list__input visually-hidden" type="radio" id="radio1" name="radio" checked>
                 <label class="radio-list__label" for="radio1">Pink для iOS
                 </label>
@@ -105,21 +111,21 @@
               <input class="radio-list__input visually-hidden" type="radio" id="radio3" name="radio">
                 <label class="radio-list__label" for="radio3">Windows Phone
                 </label>
+              </div>
           </fieldset>
+          </div>
           <fieldset class="contest-form__wrapper">
-            <label class="contest-form__label" for="area">
+            <label class="contest-form__wrapper-name" for="area">
               Опишите свои эмоции
             </label>
-            <textarea class="contest-form__input" id="area" name="area">
-              Можно прям в красках, не стесняясь в выражениях
-            </textarea>
+            <textarea class="contest-form__input contest-form__input--area" id="area" name="area" minlength="1" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="contest-form__button" type="submit">
             Отправить форму
           </button>
         </form>
       <p class="contest-form__text">
-        * - обязательные поля
+        <span class="contest-form__text contest-form__text--star">*</span> — обязательные поля
       </p>
     </main>
     <footer class="page-footer">

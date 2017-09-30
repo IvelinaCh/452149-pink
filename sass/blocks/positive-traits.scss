@@ -3,22 +3,22 @@
   padding: 0 33px;
   text-align: center;
   background-color: $lightgray;
-}
 
-.positive-traits__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.positive-traits__item {
-  margin-bottom: 40px;
-}
+  &__item {
+    margin-bottom: 40px;
+  }
 
-.positive-traits__text {
-  font-size: 14px;
-  line-height: 1.5;
-  color: $darkblue;
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $darkblue;
+  }
 }
 
 .caption {

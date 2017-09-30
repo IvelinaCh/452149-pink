@@ -3,21 +3,27 @@
   background-image: url("../img/iphone-hand-mobile@1x.png"),
   url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-}
 
-.page-header__text {
-  margin: 0;
-  padding: 0 40px 35px;
-  font-size: 14px;
-  line-height: 24px;
-  color: $white;
-  font-weight: lighter;
+  &__text {
+    margin: 0;
+    padding: 0 40px 35px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $white;
+    font-weight: lighter;
+  }
 }
 
 .page-header__title {
-  margin: 0 75px;
+  margin: 0;
+  padding: 30px 75px;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.21;
   color: $white;
   font-weight: lighter;
+
+  &--text {
+    margin: 0 0 50px;
+    padding: 30px 25px 53px;
+  }
 }
