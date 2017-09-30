@@ -1,6 +1,8 @@
 .reviews {
-  margin: 0;
+  margin: -65px 0 0;
   margin-bottom: 75px;
+  background-color: $white;
+  z-index: 2;
 
   &__list {
     list-style: none;

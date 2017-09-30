@@ -1,8 +1,10 @@
 .positive-traits {
   margin: 0;
-  padding: 0 33px;
+  padding: 78px 33px 350px;
   text-align: center;
-  background-color: $lightgray;
+  background: $lightgray url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  background-position-x: 50%;
+  background-position-y: 95%;
 
   &__list {
     list-style: none;

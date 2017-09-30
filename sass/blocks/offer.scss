@@ -1,7 +1,23 @@
-.offer__text {
-  font-size: 24px;
-  line-height: auto;
-  color: $darkblue;
-  font-weight: lighter;
-  text-align: center;
+.offer {
+  position: relative;
+  padding: 15px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 40px;
+    background: transparent url("../img/bg-triangle-white.svg") no-repeat;
+    background-size: contain;
+    bottom: -40px;
+    left: 0;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: auto;
+    color: $darkblue;
+    font-weight: lighter;
+    text-align: center;
+  }
 }
