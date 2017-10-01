@@ -1,4 +1,4 @@
-@import "css/normalize.css";
+@import "normalize.scss";
 @import "visually-hidden.scss";
 /*@import "slider.scss";*/
 @import "container.scss";
@@ -20,6 +20,11 @@
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 /*@import "blocks/window-modal.scss";*/
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+}
 
 body {
   margin: 0 auto;

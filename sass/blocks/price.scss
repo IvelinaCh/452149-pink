@@ -5,10 +5,10 @@
 .price-list {
   border-collapse: collapse;
   margin-bottom: 100px;
+}
 
-  &__usd {
-    font-weight: lighter;
-  }
+.price-list__usd {
+  font-weight: lighter;
 }
 
 .price-list__header {

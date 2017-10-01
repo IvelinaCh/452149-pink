@@ -1,16 +1,52 @@
 .radio-list {
+  margin-top: -3px;
   margin-bottom: 27px;
   background-color: $lightgray;
+}
 
-  &__label {
-    margin-top: -6px;
-    padding: 0 0 52px 55px;
-    font-size: 18px;
-    line-height: 30px;
-    color: $darkblue;
+.radio-list__label {
+  position: relative;
+  margin-top: -6px;
+  padding: 0 0 52px 55px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $darkblue;
 
-    &:last-child {
-      padding-bottom: 37px;
-    }
+  &:last-child {
+    padding-bottom: 37px;
   }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    width: 35px;
+    height: 35px;
+    top: -5px;
+    left: -10px;
+    background-color: $white;
+    border: 2px solid $ligtergray;
+    border-radius: 50%;
+  }
+
+  &::after {
+    display: none;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    left: 2px;
+    background-color: $rose;
+    border-radius: 50%;
+  }
+}
+
+.radio-list__input {
+  display: none;
+}
+
+.radio-list__input:checked + .radio-list__label::after {
+  display: block;
 }

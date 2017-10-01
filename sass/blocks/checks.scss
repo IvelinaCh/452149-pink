@@ -1,4 +1,5 @@
 .checks__label {
+  position: relative;
   padding: 0 0 52px 55px;
   font-size: 18px;
   line-height: 30px;
@@ -8,17 +9,39 @@
     padding-bottom: 38px;
     margin-bottom: 12px;
   }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    width: 35px;
+    height: 35px;
+    top: -5px;
+    left: -10px;
+    background-color: $white;
+    border: 2px solid $ligtergray;
+  }
+
+  &::after {
+    display: none;
+    width: 7px;
+    height: 20px;
+    top: 0;
+    left: 5px;
+    border: 2px solid $rose;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+  }
 }
 
 .checks__input {
-  position: relative;
+  display: none;
+}
 
-  &::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/");
-  }
+.checks__input:checked + .checks__label::after {
+  display: block;
 }

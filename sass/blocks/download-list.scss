@@ -3,19 +3,19 @@
   justify-content: space-around;
   align-items: center;
   padding: 30px 40px 0;
+}
 
-  &__wrapper {
-    margin: 437px 0 0;
-    padding: 0;
-    font: inherit;
-    background-color: $darkblue;
-    text-align: center;
-  }
+.download-list__wrapper {
+  margin: 437px 0 0;
+  padding: 0;
+  font: inherit;
+  background-color: $darkblue;
+  text-align: center;
+}
 
-  &__button {
-    padding: 12px 35px;
-    color: $white;
-    text-decoration: none;
-    border-radius: 35px;
-  }
+.download-list__button {
+  padding: 12px 35px;
+  color: $white;
+  text-decoration: none;
+  border-radius: 35px;
 }
