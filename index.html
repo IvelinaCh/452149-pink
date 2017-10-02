@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <nav class="main-nav">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo-href">
@@ -85,63 +85,60 @@
           <h2 class="visually-hidden">Отзывы о приложении</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
-              <h3 class="caption">Николай Петров</h3>
-              <q class="reviews__blockquote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+              <h3 class="caption caption--cite">Николай Петров</h3>
+              <p class="reviews__blockquote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="reviews__item slider__item">
-              <h3 class="caption">2</h3>
-              <q class="reviews__blockquote">2</q>
+              <h3 class="caption caption--cite">2</h3>
+              <p class="reviews__blockquote">2</p>
             </li>
             <li class="reviews__item slider__item">
-              <h3 class="caption">3</h3>
-              <q class="reviews__blockquote">3</q>
+              <h3 class="caption caption--cite">3</h3>
+              <p class="reviews__blockquote">3</p>
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-            <input class="slider__toggle" type="radio" id="reviews-slider1" name="reviews-slide" checked><label class="slider__label" for="reviews-slider1">1</label>
-            <input class="slider__toggle" type="radio" id="reviews-slider2" name="reviews-slide"><label class="slider__label" for="reviews-slider2">2</label>
-            <input class="slider__toggle" type="radio" id="reviews-slider3" name="reviews-slide"><label class="slider__label" for="reviews-slider3">3</label>
+            <input class="slider__toggle" type="radio" id="reviews-slider1" name="reviews-slide" checked><label class="slider__label" for="reviews-slider1"></label>
+            <input class="slider__toggle" type="radio" id="reviews-slider2" name="reviews-slide"><label class="slider__label" for="reviews-slider2"></label>
+            <input class="slider__toggle" type="radio" id="reviews-slider3" name="reviews-slide"><label class="slider__label" for="reviews-slider3"></label>
           </p>
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper slider">
+        <div class="price-list__wrapper slider">
           <table class="price-list slider-list">
             <tr>
               <th class="price-list__header slider__item">
                 Стандарт
-                <span class="price-list__usd">3,99 USD</span>
+                <span class="price-list__header price-list__header--usd">3,99 USD</span>
+              </th>
+              <th class="price-list__header price-list__header--hit slider__item">
+                Стандарт
+                <span class="price-list__header price-list__header--usd">3,99 USD</span>
+              </th>
+              <th class="price-list__header slider__item">
+                Стандарт
+                <span class="price-list__header price-list__header--usd">3,99 USD</span>
               </th>
             </tr>
             <tr>
               <td class="price-list__point  price-list__point--have slider__item">
                 Розовый фильтр
               </td>
-            </tr>
-            <tr>
-              <td class="price-list__point price-list__point--havent slider__item">
-                Смайлики
+              <td class="price-list__point price-list__point--have slider__item">
+                Розовый фильтр
               </td>
-            </tr>
-            <tr>
-              <td class="price-list__point price-list__point--havent slider__item">
-                Комментарии
-              </td>
-            </tr>
-          </table>
-          <table class="price-list slider-list">
-            <tr>
-              <th class="price-list__header price-list__header--hit slider__item">
-                Стандарт
-                <span class="price-list__usd">3,99 USD</span>
-              </th>
-            </tr>
-            <tr>
               <td class="price-list__point price-list__point--have slider__item">
                 Розовый фильтр
               </td>
             </tr>
             <tr>
+              <td class="price-list__point price-list__point--havent slider__item">
+                Смайлики
+              </td>
+              <td class="price-list__point price-list__point--have slider__item">
+                Смайлики
+              </td>
               <td class="price-list__point price-list__point--have slider__item">
                 Смайлики
               </td>
@@ -150,35 +147,18 @@
               <td class="price-list__point price-list__point--havent slider__item">
                 Комментарии
               </td>
-            </tr>
-          </table>
-          <table class="price-list slider-list">
-            <tr>
-              <th class="price-list__header slider__item">
-                Стандарт
-                <span class="price-list__usd">3,99 USD</span>
-              </th>
-            </tr>
-            <tr>
-              <td class="price-list__point price-list__point--have slider__item">
-                Розовый фильтр
+              <td class="price-list__point price-list__point--havent slider__item">
+                Комментарии
               </td>
-            </tr>
-            <tr>
-              <td class="price-list__point price-list__point--have slider__item">
-                Смайлики
-              </td>
-            </tr>
-            <tr>
               <td class="price-list__point price-list__point--have slider__item">
                 Комментарии
               </td>
             </tr>
           </table>
           <p class="price__toggles slider__toggles">
-            <input class="slider__toggle" type="radio" id="price-slider1" name="price-slide"><label class="slider__label" for="price-slider1">1</label>
-            <input class="slider__toggle" type="radio" id="price-slider2" name="price-slide" checked><label class="slider__label" for="price-slider2">2</label>
-            <input class="slider__toggle" type="radio" id="price-slider3" name="price-slide"><label class="slider__label" for="price-slider3">3</label>
+            <input class="slider__toggle" type="radio" id="price-slider1" name="price-slide"><label class="slider__label" for="price-slider1"></label>
+            <input class="slider__toggle" type="radio" id="price-slider2" name="price-slide" checked><label class="slider__label" for="price-slider2"></label>
+            <input class="slider__toggle" type="radio" id="price-slider3" name="price-slide"><label class="slider__label" for="price-slider3"></label>
           </p>
         </div>
       </section>

@@ -1,0 +1,74 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider__list {
+  width: 840px;
+  box-sizing: border-box;
+}
+
+.slider__toggle {
+  display: none;
+}
+
+.slider__toggles {
+  text-align: center;
+}
+
+.slider__label {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #b5b9be;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#price-slider1:checked ~ .slider__label[for="price-slider1"] {
+  box-shadow: 0 0 0 3px #000000;
+}
+
+#price-slider2:checked ~ .slider__label[for="price-slider2"] {
+  box-shadow: 0 0 0 3px #000000;
+}
+
+#price-slider3:checked ~ .slider__label[for="price-slider3"] {
+  box-shadow: 0 0 0 3px #000000;
+}
+
+#price-slider1:checked ~ .price-list {
+  transform: translate(0);
+}
+
+#price-slider2:checked ~ .price-list {
+  transform: translate(-280px);
+}
+
+#price-slider3:checked ~ .price-list {
+  transform: translate(-560px);
+}
+
+#reviews-slider1:checked ~ .slider__label[for="reviews-slider1"] {
+  box-shadow: 0 0 0 3px #000000;
+}
+
+#reviews-slider2:checked ~ .slider__label[for="reviews-slider2"] {
+  box-shadow: 0 0 0 3px #000000;
+}
+
+#reviews-slider3:checked ~ .slider__label[for="reviews-slider3"] {
+  box-shadow: 0 0 0 3px #000000;
+}
+
+#reviews-slider1:checked ~ .reviews__list {
+  transform: translate(0);
+}
+
+#reviews-slider2:checked ~ .reviews__list {
+  transform: translate(-280px);
+}
+
+#reviews-slider3:checked ~ .reviews__list {
+  transform: translate(-560px);
+}

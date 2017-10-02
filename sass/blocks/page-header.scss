@@ -1,12 +1,19 @@
 .page-header {
   background-color: $darkblue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 0;
+}
+
+.page-header--index {
+  background-color: $darkblue;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position-y: 62%, 0;
 }
 
 .page-header__text {
-  margin: 0;
   padding: 0 40px 27px;
   font-size: 14px;
   line-height: 24px;

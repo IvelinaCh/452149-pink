@@ -1,20 +1,19 @@
 .price {
+  margin-top: -55px;
   background-color: $lightgray;
 }
 
 .price-list {
+  margin-top: 5px;
   border-collapse: collapse;
-  margin-bottom: 100px;
-}
-
-.price-list__usd {
-  font-weight: lighter;
+  margin-bottom: 30px;
+  width: 840px;
+  box-sizing: border-box;
 }
 
 .price-list__header {
   margin: 0;
-  padding: 20px 110px;
-  width: 280px;
+  padding: 16px 70px 20px;
   background-color: $darkblue;
   font-size: 18px;
   line-height: 30px;
@@ -22,15 +21,36 @@
   text-transform: uppercase;
   font-weight: bold;
 
+  &--usd {
+    padding: 0;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: lighter;
+  }
+
   &--hit {
-    background-image: url("../img/bg-hit-tablet.svg");
+    position: relative;
+    background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-position: top left;
+    background-size: 75px;
+
+    &::after {
+      position: absolute;
+      content: "Хит";
+      top: 15px;
+      left: 10px;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: lighter;
+      background-size: 75px;
+      transform: rotate(-45deg);
+    }
   }
 }
 
 .price-list__point {
-  padding: 15px 70px 15px 20px;
+  padding: 14px 70px 14px 20px;
   font-size: 14px;
   line-height: 30px;
   color: $darkblue;
@@ -39,7 +59,7 @@
   border: 2px solid $ligtergray;
   background-repeat: no-repeat;
   background-size: 31px 21px;
-  background-position: 90% center;
+  background-position: 92% center;
 
   &--have {
     background-image: url("../img/icon-yes.svg");
@@ -48,4 +68,14 @@
   &--havent {
     background-image: url("../img/icon-no.svg");
   }
+}
+
+.price-list__wrapper {
+  margin: 0 0 0 20px;
+  padding: 85px 0 0 0;
+}
+
+.price__toggles {
+  margin-left: -20px;
+  padding-bottom: 25px;
 }
