@@ -25,50 +25,50 @@
   cursor: pointer;
 }
 
-#price-slider1:checked ~ .slider__label[for="price-slider1"] {
+.price__slider1:checked ~ .slider__label[for="price-slider1"] {
   box-shadow: 0 0 0 3px #000000;
 }
 
-#price-slider2:checked ~ .slider__label[for="price-slider2"] {
+.price__slider2:checked ~ .slider__label[for="price-slider2"] {
   box-shadow: 0 0 0 3px #000000;
 }
 
-#price-slider3:checked ~ .slider__label[for="price-slider3"] {
+.price__slider3:checked ~ .slider__label[for="price-slider3"] {
   box-shadow: 0 0 0 3px #000000;
 }
 
-#price-slider1:checked ~ .price-list {
+.price__slider1:checked ~ .price-list {
   transform: translate(0);
 }
 
-#price-slider2:checked ~ .price-list {
+.price__slider2:checked ~ .price-list {
   transform: translate(-280px);
 }
 
-#price-slider3:checked ~ .price-list {
+.price__slider3:checked ~ .price-list {
   transform: translate(-560px);
 }
 
-#reviews-slider1:checked ~ .slider__label[for="reviews-slider1"] {
+.reviews__slider1:checked ~ .slider__label[for="reviews-slider1"] {
   box-shadow: 0 0 0 3px #000000;
 }
 
-#reviews-slider2:checked ~ .slider__label[for="reviews-slider2"] {
+.reviews__slider2:checked ~ .slider__label[for="reviews-slider2"] {
   box-shadow: 0 0 0 3px #000000;
 }
 
-#reviews-slider3:checked ~ .slider__label[for="reviews-slider3"] {
+.reviews__slider3:checked ~ .slider__label[for="reviews-slider3"] {
   box-shadow: 0 0 0 3px #000000;
 }
 
-#reviews-slider1:checked ~ .reviews__list {
+.reviews__slider1:checked ~ .reviews__list {
   transform: translate(0);
 }
 
-#reviews-slider2:checked ~ .reviews__list {
+.reviews__slider2:checked ~ .reviews__list {
   transform: translate(-280px);
 }
 
-#reviews-slider3:checked ~ .reviews__list {
+.reviews__slider3:checked ~ .reviews__list {
   transform: translate(-560px);
 }
