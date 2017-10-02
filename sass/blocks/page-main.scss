@@ -15,10 +15,10 @@
 .page-main__cite {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans Bold";
   font-size: 14px;
   line-height: 14px;
   color: $darkblue;
-  font-weight: bold;
   font-style: normal;
 }
 
@@ -40,10 +40,10 @@
     right: 0;
     padding: 6px 20px;
     content: "Панорама дня";
+    font-family: "Open Sans Bold";
     font-size: 12px;
     line-height: 24px;
     color: $white;
-    font-weight: bold;
     text-transform: uppercase;
     background-color: $rose;
   }
@@ -67,10 +67,10 @@
 }
 
 .page-main__photo-time {
+  font-family: "Open Sans Light";
   font-size: 12px;
   line-height: 14px;
   color: $gray;
-  font-weight: lighter;
   text-transform: uppercase;
 }
 
