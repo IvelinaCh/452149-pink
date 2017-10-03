@@ -19,3 +19,12 @@
   text-decoration: none;
   border-radius: 35px;
 }
+
+@media (min-width: 660px) {
+  .download-list__wrapper {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
