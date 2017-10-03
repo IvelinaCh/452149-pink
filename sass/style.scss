@@ -21,6 +21,10 @@
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 /*@import "blocks/window-modal.scss";*/
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
 
 body {
   margin: 0 auto;

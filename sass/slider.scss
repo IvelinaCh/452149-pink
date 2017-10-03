@@ -27,14 +27,17 @@
 
 .price__slider1:checked ~ .slider__label[for="price-slider1"] {
   box-shadow: 0 0 0 3px #000000;
+  background-color: #ffffff;
 }
 
 .price__slider2:checked ~ .slider__label[for="price-slider2"] {
   box-shadow: 0 0 0 3px #000000;
+  background-color: #ffffff;
 }
 
 .price__slider3:checked ~ .slider__label[for="price-slider3"] {
   box-shadow: 0 0 0 3px #000000;
+  background-color: #ffffff;
 }
 
 .price__slider1:checked ~ .price-list {
@@ -51,14 +54,17 @@
 
 .reviews__slider1:checked ~ .slider__label[for="reviews-slider1"] {
   box-shadow: 0 0 0 3px #000000;
+  background-color: #ffffff;
 }
 
 .reviews__slider2:checked ~ .slider__label[for="reviews-slider2"] {
   box-shadow: 0 0 0 3px #000000;
+  background-color: #ffffff;
 }
 
 .reviews__slider3:checked ~ .slider__label[for="reviews-slider3"] {
   box-shadow: 0 0 0 3px #000000;
+  background-color: #ffffff;
 }
 
 .reviews__slider1:checked ~ .reviews__list {
