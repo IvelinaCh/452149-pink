@@ -1,0 +1,24 @@
+.positive-traits {
+  margin: 0;
+  padding: 78px 33px 355px;
+  text-align: center;
+  background: $lightgray url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  background-position-x: 50%;
+  background-position-y: 95%;
+}
+
+.positive-traits__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.positive-traits__item {
+  margin-bottom: 30px;
+}
+
+.positive-traits__text {
+  font-size: 14px;
+  line-height: 1.75;
+  color: $darkblue;
+}

@@ -1,0 +1,21 @@
+.download-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 40px 0;
+}
+
+.download-list__wrapper {
+  margin: 437px 0 0;
+  padding: 0;
+  font: inherit;
+  background-color: $darkblue;
+  text-align: center;
+}
+
+.download-list__button {
+  padding: 12px 40px;
+  color: $white;
+  text-decoration: none;
+  border-radius: 35px;
+}
