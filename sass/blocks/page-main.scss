@@ -115,6 +115,10 @@
   padding: 70px 0;
   background: url("../img/..") no-repeat;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .page-main__effect-title {
@@ -135,13 +139,4 @@
 .page-main__effect-href {
   padding: 0;
   color: $rose;
-}
-
-@media (min-width: 660px) {
-  .page-main__effect {
-    display: block;
-  }
-}
-
-@media (min-width: 1200px) {
 }

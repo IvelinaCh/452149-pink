@@ -1,9 +1,8 @@
 @import "fonts.scss";
 @import "normalize.scss";
 @import "var.scss";
-@import "visually-hidden.scss";
+@import "scaffolding.scss";
 @import "slider.scss";
-@import "container.scss";
 @import "blocks/checks.scss";
 @import "blocks/contacts.scss";
 @import "blocks/contest-form.scss";
@@ -21,30 +20,3 @@
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 /*@import "blocks/window-modal.scss";*/
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  min-width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  color: $darkblue;
-  text-align: center;
-  background-color: $white;
-}
-
-.button {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  border: 4px solid;
-}
-
-.caption {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.333;
-  color: $black;
-  font-weight: bold;
-}

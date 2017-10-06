@@ -3,6 +3,10 @@
   justify-content: space-around;
   align-items: center;
   padding: 30px 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 30px 15px;
+  }
 }
 
 .page-header__wrapper {
@@ -13,6 +17,12 @@
   background-color: $darkblue;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 20px 30px;
+    padding-bottom: 70px;/*!!!!!!!!!!!*/
+    max-width: 300px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -22,6 +32,14 @@
     height: 314px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      bottom: 0;
+      left: -20px;
+      width: 660px;
+      height: 545px;
+      background-image: url("../img/iphone-6 copy.png");
+    }
   }
 }
 
@@ -30,31 +48,8 @@
   color: $white;
   text-decoration: none;
   border-radius: 35px;
-}
 
-@media (min-width: 660px) {
-  .page-header__wrapper {
-    margin: 0 20px 30px;
-    padding-bottom: 70px;/*!!!!!!!!!!!*/
-    max-width: 300px;
-
-    &::after {
-      bottom: 0;
-      left: -20px;
-      width: 660px;
-      height: 545px;
-      background-image: url("../img/iphone-6 copy.png");
-    }
-  }
-
-  .page-header__button {
+  @media (min-width: $tablet-width) {
     padding: 12px 50px;
   }
-
-  .download-list {
-    padding: 40px 30px 15px;
-  }
-}
-
-@media (min-width: 1200px) {
 }

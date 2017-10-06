@@ -5,6 +5,11 @@
   list-style: none;
   margin: 0 70px 25px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 177px;
+    margin-bottom: 0;
+  }
 }
 
 .social__item {
@@ -25,14 +30,4 @@
   &--youtube {
     background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
   }
-}
-
-@media (min-width: 660px) {
-  .social {
-    min-width: 177px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 1200px) {
 }

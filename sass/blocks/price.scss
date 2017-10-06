@@ -9,13 +9,22 @@
   width: 840px;
   box-sizing: border-box;
   transform: translate(-260px);
+
+  @media (min-width: $tablet-width) {
+    margin: 55px 20px 65px;
+    width: 620px;
+    box-sizing: border-box;
+    transform: translate(0);
+  }
 }
 
 .price-list tr > *:first-child {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+  }
 }
-
-
 
 .price-list__header {
   margin: 0;
@@ -27,6 +36,12 @@
   color: $white;
   text-transform: uppercase;
   border: 2px solid $ligtergray;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.875;
+  }
 
   &--usd {
     padding: 0;
@@ -46,6 +61,12 @@
     background-position: top left;
     background-size: 75px;
 
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-size: 60px;
+      z-index: 2;
+    }
+
     &::after {
       position: absolute;
       content: "Хит";
@@ -56,6 +77,15 @@
       line-height: 18px;
       background-size: 75px;
       transform: rotate(-45deg);
+
+      @media (min-width: $tablet-width) {
+        top: 10px;
+        left: 5px;
+        font-size: 14px;
+        line-height: 16px;
+        background-size: 60px;
+        z-index: 3;
+      }
     }
   }
 
@@ -77,6 +107,15 @@
   background-size: 31px 21px;
   background-position: 95% center;
 
+  @media (min-width: $tablet-width) {
+    padding: 7px 23px 7px 15px;
+    white-space: nowrap;
+    text-transform: none;
+    background-repeat: no-repeat;
+    background-size: 31px 21px;
+    background-position: 50% center;
+  }
+
   &--have {
     background-image: url("../img/icon-yes.svg");
   }
@@ -93,59 +132,14 @@
 
 .price__toggles {
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-@media (min-width: 660px) {
-  .price-list {
-    margin: 55px 20px 65px;
-    width: 620px;
-    box-sizing: border-box;
-    transform: translate(0);
-  }
-
-  .price-list tr > *:first-child {
-    display: table-cell;
-  }
-
-  .price-list tr > td:nth-child(n + 2) {
+.price-list tr > td:nth-child(n + 2) {
+  @media (min-width: $tablet-width) {
     font-size: 0;
   }
-
-  .price-list__header {
-    padding: 10px 20px;
-    font-size: 16px;
-    line-height: 1.875;
-
-    &--hit {
-      background-image: url("../img/bg-hit-tablet.svg");
-      background-size: 60px;
-      z-index: 2;
-
-      &::after {
-        top: 10px;
-        left: 5px;
-        font-size: 14px;
-        line-height: 16px;
-        background-size: 60px;
-        z-index: 3;
-      }
-  }
-  }
-
-  .price-list__point {
-    padding: 7px 23px 7px 15px;
-    white-space: nowrap;
-    text-transform: none;
-    background-repeat: no-repeat;
-    background-size: 31px 21px;
-    background-position: 50% center;
-  }
-
-
-.price__toggles {
-  display: none;
-}
-}
-
-@media (min-width: 1200px) {
 }

@@ -20,10 +20,8 @@
   line-height: 1.2;
   color: $darkblue;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .offer__text {
+  @media (min-width: $tablet-width) {
     margin: 15px 0 0;
     font-size: 40px;
     line-height: 1.2;
@@ -39,7 +37,9 @@
       left: 0;
     }
   }
+
 }
+
 /*
 @media (min-width: 1200px) {
   .contain {
