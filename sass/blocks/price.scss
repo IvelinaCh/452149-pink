@@ -4,17 +4,22 @@
 }
 
 .price-list {
-  margin-top: 5px;
+  margin: 5px 0 30px;
   border-collapse: collapse;
-  margin-bottom: 30px;
   width: 840px;
   box-sizing: border-box;
   transform: translate(-260px);
 }
 
+.price-list tr > *:first-child {
+  display: none;
+}
+
+
+
 .price-list__header {
   margin: 0;
-  padding: 16px 70px 20px;
+  padding: 16px 75px 20px;
   background-color: $darkblue;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -29,6 +34,8 @@
     font-size: 24px;
     line-height: 1.25;
     font-weight: normal;
+    background-color: transparent;
+    white-space: nowrap;
     border: none;
   }
 
@@ -50,6 +57,11 @@
       background-size: 75px;
       transform: rotate(-45deg);
     }
+  }
+
+  &--null {
+    background-color: transparent;
+    border: none;
   }
 }
 
@@ -74,11 +86,66 @@
   }
 }
 
-.price-list__wrapper {
+.price__wrapper {
   margin: 0;
   padding: 85px 0 0 0;
 }
 
 .price__toggles {
   padding-bottom: 25px;
+}
+
+@media (min-width: 660px) {
+  .price-list {
+    margin: 55px 20px 65px;
+    width: 620px;
+    box-sizing: border-box;
+    transform: translate(0);
+  }
+
+  .price-list tr > *:first-child {
+    display: table-cell;
+  }
+
+  .price-list tr > td:nth-child(n + 2) {
+    font-size: 0;
+  }
+
+  .price-list__header {
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.875;
+
+    &--hit {
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-size: 60px;
+      z-index: 2;
+
+      &::after {
+        top: 10px;
+        left: 5px;
+        font-size: 14px;
+        line-height: 16px;
+        background-size: 60px;
+        z-index: 3;
+      }
+  }
+  }
+
+  .price-list__point {
+    padding: 7px 23px 7px 15px;
+    white-space: nowrap;
+    text-transform: none;
+    background-repeat: no-repeat;
+    background-size: 31px 21px;
+    background-position: 50% center;
+  }
+
+
+.price__toggles {
+  display: none;
+}
+}
+
+@media (min-width: 1200px) {
 }

@@ -5,15 +5,27 @@
   padding: 30px 40px 0;
 }
 
-.download-list__wrapper {
-  margin: 437px 0 0;
+.page-header__wrapper {
+  position: relative;
+  /*margin: 437px 0 0;/*!!!!!!!!!!!*/
   padding: 0;
   font: inherit;
   background-color: $darkblue;
   text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 240px;
+    left: 0;
+    width: 320px;
+    height: 314px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
 }
 
-.download-list__button {
+.page-header__button {
   padding: 12px 40px;
   color: $white;
   text-decoration: none;
@@ -21,8 +33,26 @@
 }
 
 @media (min-width: 660px) {
-  .download-list__wrapper {
+  .page-header__wrapper {
+    margin: 0 20px 30px;
+    padding-bottom: 70px;/*!!!!!!!!!!!*/
     max-width: 300px;
+
+    &::after {
+      bottom: 0;
+      left: -20px;
+      width: 660px;
+      height: 545px;
+      background-image: url("../img/iphone-6 copy.png");
+    }
+  }
+
+  .page-header__button {
+    padding: 12px 50px;
+  }
+
+  .download-list {
+    padding: 40px 30px 15px;
   }
 }
 

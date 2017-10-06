@@ -108,3 +108,40 @@
   line-height: 2.143;
   color: $darkblue;
 }
+
+.page-main__effect {
+  display: none;
+  margin: 0 20px 75px 330px;/*!!!!!!!!!!!!!!!*/
+  padding: 70px 0;
+  background: url("../img/..") no-repeat;
+  text-align: left;
+}
+
+.page-main__effect-title {
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 1.2;
+  color: $black;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+}
+
+.page-main__effect-text {
+  margin: 0;
+  padding: 0 14px 10px 0;
+  line-height: 1.75;
+}
+
+.page-main__effect-href {
+  padding: 0;
+  color: $rose;
+}
+
+@media (min-width: 660px) {
+  .page-main__effect {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+}

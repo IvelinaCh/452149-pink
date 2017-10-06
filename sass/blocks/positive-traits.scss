@@ -22,3 +22,22 @@
   line-height: 1.75;
   color: $darkblue;
 }
+
+@media (min-width: 660px) {
+  .positive-traits {
+    margin-top: 60px;
+    padding-bottom: 15px;/*??????????//*/
+    display: flex;
+    background-position-x: 5%;
+    background-position-y: 0;
+    background-size: contain;
+  }
+
+  .positive-traits__list {
+    max-width: 320px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+}

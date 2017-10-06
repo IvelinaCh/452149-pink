@@ -21,3 +21,31 @@
   color: $darkblue;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .offer__text {
+    margin: 15px 0 0;
+    font-size: 40px;
+    line-height: 1.2;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 660px;
+      height: 50px;
+      background: transparent url("../img/bg-triangle-white.svg") no-repeat;
+      background-size: contain;
+      bottom: -110px;/*!!!!!!!!!!!!*/
+      left: 0;
+    }
+  }
+}
+/*
+@media (min-width: 1200px) {
+  .contain {
+    width: 1200px;
+    padding: 0 120px;
+    box-sizing: border-box;
+  }
+}
+*/

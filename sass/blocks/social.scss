@@ -26,3 +26,13 @@
     background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
   }
 }
+
+@media (min-width: 660px) {
+  .social {
+    min-width: 177px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+}
