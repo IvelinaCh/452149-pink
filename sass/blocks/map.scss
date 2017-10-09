@@ -1,7 +1,8 @@
 .map {
   position: relative;
-  margin: -24px 0 0 0;
+  margin: -24px 0 0;
   padding: 0;
+  width: 100%;
 }
 
 .map__iframe {
@@ -11,6 +12,10 @@
   height: 200px;
 
   @media (min-width: $tablet-width) {
-    height: 375px;
+    height: 365px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 500px;
   }
 }

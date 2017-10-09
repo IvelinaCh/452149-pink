@@ -3,6 +3,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-y: 0;
+
+  @media (min-width: $desktop-width) {
+    background-size: cover;
+  }
 }
 /*
 .page-header--index {
@@ -19,12 +23,19 @@
     display: block;
     margin: 0 auto 43px 50px;
     padding: 0;
-    width: 205px;
+    max-width: 205px;
     font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 40px;
     line-height: 1.2;
     color: $white;
     z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 240px;
+    margin: 0 auto 65px 30px;
   }
 }
 
@@ -40,6 +51,10 @@
     font-size: 18px;
     line-height: 1.333;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 124px;
+  }
 }
 
 .page-header__title {
@@ -51,8 +66,83 @@
   font-weight: normal;
   color: $white;
 
+  @media (min-width: $tablet-width) {
+    margin: 40px 0 90px;/*!!!!!!!*/
+    padding-bottom: 140px;/*!!!!!!!1*/
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
   &--text {
     margin: 0 0 50px;
     padding: 30px 25px 53px;
+
+    @media (min-width: $tablet-width) {
+      margin: 40px 0 100px;/*!!!!!!!*/
+      padding-bottom: 80px;/*!!!!!!!1*/
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.page-header__wrapper {
+  position: relative;
+  /*margin: 437px 0 0;/*!!!!!!!!!!!*/
+  padding: 0;
+  font: inherit;
+  /*background-color: $darkblue;*/
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 20px 30px;
+    padding-bottom: 70px;/*!!!!!!!!!!!*/
+    max-width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 130px 30px;
+    padding: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 240px;
+    left: 0;
+    width: 320px;
+    height: 314px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      bottom: 0;
+      left: -20px;
+      width: 660px;
+      height: 545px;
+      background-image: url("../img/iphone-6 copy.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 0;
+      left: 55%;
+    }
+  }
+}
+
+.page-header__button {
+  padding: 12px 40px;
+  color: $white;
+  text-decoration: none;
+  border-radius: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 0.857;
+    padding: 10px 25px;
   }
 }

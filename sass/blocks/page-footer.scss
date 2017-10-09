@@ -1,5 +1,13 @@
 .page-footer {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 35px 20px 40px;
+  }
 }
 
 .page-footer__text {
@@ -12,7 +20,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    padding: 45px 100px;/*!!!!!!!!!!!!!!!*/
+    padding: 10px 100px 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    padding: 30px 250px 43px;
   }
 }
 /*
@@ -69,6 +82,11 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
-    padding: 35px 20px 40px;
+    padding: 35px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 65px 110px;
   }
 }

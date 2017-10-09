@@ -7,12 +7,26 @@
   background-position-y: 95%;
 
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
+    padding-right: 15px;
     padding-bottom: 15px;/*??????????//*/
     display: flex;
     background-position-x: 5%;
     background-position-y: 0;
     background-size: contain;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.positive-traits .caption {
+  @media (min-width: $desktop-width) {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
@@ -25,14 +39,31 @@
     max-width: 320px;
     margin-left: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 310px 120px 0;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .positive-traits__item {
   margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 240px;
+  }
 }
 
 .positive-traits__text {
   font-size: 14px;
   line-height: 1.75;
   color: $darkblue;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 1.667;
+  }
 }

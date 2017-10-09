@@ -1,9 +1,21 @@
+.checks {
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+  }
+}
+
 .checks__label {
   position: relative;
   padding: 0 0 52px 55px;
   font-size: 18px;
   line-height: 30px;
   color: $darkblue;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+  }
 
   &:last-child {
     padding-bottom: 38px;

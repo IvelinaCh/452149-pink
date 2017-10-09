@@ -11,10 +11,15 @@
   transform: translate(-260px);
 
   @media (min-width: $tablet-width) {
-    margin: 55px 20px 65px;
+    margin: 50px 20px 70px;
     width: 620px;
     box-sizing: border-box;
     transform: translate(0);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 120px 130px 100px;
+    width: 940px;
   }
 }
 
@@ -23,6 +28,12 @@
 
   @media (min-width: $tablet-width) {
     display: table-cell;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 12px 60px 15px 20px;
+    font-size: 18px;
+    line-height: 1.667;
   }
 }
 
@@ -41,6 +52,12 @@
     padding: 10px 20px;
     font-size: 16px;
     line-height: 1.875;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 65px;
+    font-size: 18px;
+    line-height: 1.667;
   }
 
   &--usd {

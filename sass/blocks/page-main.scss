@@ -1,15 +1,41 @@
 .page-main {
   background-color: $white;
+}
 
-  &__title-form {
-    margin: -5px 0 30px;
-    padding: 0 20px;
+.page-main__title-form {
+  margin: -5px 0 30px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0 85px;/*!!!!!!!!!!!!*/
+    font-size: 18px;
+    line-height: 1.667;
+  }
+}
+
+.page-main__title-form--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    padding: 0 75px 65px;/*!!!!!!!!!!!!*/
+    font-size: 18px;
+    line-height: 1.667;
   }
 }
 
 .page-main__text {
   margin: 47px 0 0 0;
   padding: 50px 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding: 0 85px;/*!!!!!!!!!!!!*/
+    font-size: 18px;
+    line-height: 1.667;
+  }
 }
 
 .page-main__cite {
@@ -53,6 +79,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .page-main__photo-item {
@@ -60,9 +91,22 @@
   margin: 0 20px 22px;
   background-color: $lightgray;
 
+  &:not(:first-child) {
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
+  }
+
   &:first-child {
     margin: 0 0 22px;
     background-color: transparent;
+
+    &:first-child .page-main__photography {
+      @media (min-width: $tablet-width) {
+        width: 100%;
+        height: 510px;
+      }
+    }
   }
 }
 
@@ -111,7 +155,7 @@
 
 .page-main__effect {
   display: none;
-  margin: 0 20px 75px 330px;/*!!!!!!!!!!!!!!!*/
+  margin: 0 20px 55px 330px;/*!!!!!!!!!!!!!!!*/
   padding: 70px 0;
   background: url("../img/..") no-repeat;
   text-align: left;
@@ -119,24 +163,53 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 70px 120px 180px 500px;/*!!!!!!!!!!!!!!!*/
+    background-color: $lightgray;
+  }
 }
 
 .page-main__effect-title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   margin-bottom: 15px;
   padding: 0;
   font-size: 30px;
   line-height: 1.2;
   color: $black;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.page-main__effect-24 {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .page-main__effect-text {
   margin: 0;
-  padding: 0 14px 10px 0;
+  padding: 0 14px 5px 0;
   line-height: 1.75;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 1.667;
+    margin-bottom: 20px;
+  }
 }
 
 .page-main__effect-href {
   padding: 0;
   color: $rose;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 1.667;
+  }
 }

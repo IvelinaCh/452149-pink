@@ -7,49 +7,8 @@
   @media (min-width: $tablet-width) {
     padding: 40px 30px 15px;
   }
-}
 
-.page-header__wrapper {
-  position: relative;
-  /*margin: 437px 0 0;/*!!!!!!!!!!!*/
-  padding: 0;
-  font: inherit;
-  background-color: $darkblue;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 20px 30px;
-    padding-bottom: 70px;/*!!!!!!!!!!!*/
-    max-width: 300px;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 240px;
-    left: 0;
-    width: 320px;
-    height: 314px;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      bottom: 0;
-      left: -20px;
-      width: 660px;
-      height: 545px;
-      background-image: url("../img/iphone-6 copy.png");
-    }
-  }
-}
-
-.page-header__button {
-  padding: 12px 40px;
-  color: $white;
-  text-decoration: none;
-  border-radius: 35px;
-
-  @media (min-width: $tablet-width) {
-    padding: 12px 50px;
+  @media (min-width: $desktop-width) {
+    padding: 65px 30px 25px;
   }
 }

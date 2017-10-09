@@ -1,9 +1,21 @@
 .main-nav {
   background-color: $darkblue;
-  margin-bottom: 435px;
 
-  @media (min-width: $tablet-width) {
+  &--index {
+    margin-bottom: 435px;
+
+    @media (min-width: $tablet-width) {
     margin-bottom: 95px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 0 130px;
+    margin-bottom: 110px;
+    box-sizing: border-box;
   }
 }
 
@@ -11,6 +23,12 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .main-nav__logo {
@@ -41,34 +59,30 @@
   @media (min-width: $tablet-width) {
     padding: 31px 20px 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-left: 0;
+  }
 }
-
-/*
-@media (min-width: $desktop-width) {
-  .main-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 960px;
-    margin: 0 auto;
-  }
-
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    width: 650px;
-    margin: 0 auto;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}*/
 
 .main-nav__item {
   padding: 14px 20px 15px;
   border-bottom: 1px solid $black;
   border-top: 1px solid $darkgray;
   box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+    border: none;
+  }
+
+  &:last-child {
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+    }
+  }
 }
 
 .main-nav__item-href {
@@ -78,6 +92,15 @@
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: $white;
+    text-decoration: none;
+    text-transform: none;
+  }
 }
 
 .main-nav__toggle {
@@ -95,5 +118,9 @@
     width: 24px;
     height: 32px;
     background: transparent url("../img/icon-menu-cross.svg") no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
