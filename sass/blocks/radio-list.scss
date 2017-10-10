@@ -23,6 +23,10 @@
     margin-left: 50px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0 0 52px 70px;
+  }
+
   &:last-child {
     padding-bottom: 37px;
 
@@ -45,6 +49,10 @@
     background-color: $white;
     border: 2px solid $ligtergray;
     border-radius: 50%;
+
+    @media (min-width: $desktop-width) {
+      left: 20px;
+    }
   }
 
   &::after {
@@ -55,6 +63,10 @@
     left: 2px;
     background-color: $rose;
     border-radius: 50%;
+
+    @media (min-width: $desktop-width) {
+      left: 32px;
+    }
   }
 }
 

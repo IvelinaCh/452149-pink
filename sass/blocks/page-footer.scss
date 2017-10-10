@@ -87,6 +87,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 65px 110px;
+    padding: 10px 130px 35px;
+    box-sizing: border-box;
   }
 }

@@ -47,11 +47,12 @@
         <p class="page-main__title-form">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="page-main__title-form page-main__title-form--tablet">
-            Пожалуйста, заполните форму ниже:<!-- в абзаце спан, при таблете - дисплей блок, при десктопе инлайн-->
+            Пожалуйста, заполните форму ниже:
           </span>
         </p>
         <form class="page-main__form contest-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="contest-form__wrapper without">
+          <div class="contest-form__wrapper-desktop">
             <div class="flex-container">
               <label class="contest-form__label" for="lastname">
                 Фамилия:
@@ -70,8 +71,9 @@
               </label>
               <input class="contest-form__input contest-form__input--text" type="text" placeholder="Ну и отчество тоже" id="patronymic" name="patronymic">
             </div>
+          </div>
           </fieldset>
-          <div class="container">
+          <div class="container container--checks">
           <fieldset class="contest-form__wrapper checks">
             <legend class="contest-form__wrapper-name">
               Ваши безбашенные достижения в путешествии
@@ -115,7 +117,7 @@
               <input class="contest-form__input contest-form__input--text" type="text" placeholder="Введите почту*" id="address" name="address" required>
             </div>
           </fieldset>
-          <div class="container">
+          <div class="container container--radio">
           <fieldset class="contest-form__wrapper radio-list">
             <legend class="contest-form__wrapper-name">
               С каким приложением путешествовали?
@@ -144,12 +146,12 @@
               Отправить форму
             </button>
             <p class="contest-form__text">
-              <span class="contest-form__text contest-form__text--star">*</span> — обязательные поля
+              <span class="contest-form__text contest-form__text--star">*</span> — обязательные <span class="contest-form__hidden-text">для заполнения </span>поля
             </p>
           </div>
         </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__bottom">
       <a class="page-footer__logo-href" href="index.html">
         <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
       </a>

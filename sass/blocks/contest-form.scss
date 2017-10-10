@@ -1,8 +1,15 @@
 .contest-form {
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 110px;
+    padding: 15px 0;
   }
 }
 
@@ -10,10 +17,21 @@
   @media (min-width: $tablet-width) {
     width: 620px;
   }
+
+  &--radio {
+    @media (min-width: $desktop-width) {
+    width: 440px;
+    }
+  }
+
+  &--checks {
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
 }
 
 .contest-form .flex-container {
-
   &--tablet {
     margin: 0 20px;
     padding: 0;
@@ -25,6 +43,10 @@
       align-items: center;
       order: 6;
       margin: 65px 20px 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
     }
   }
 }
@@ -60,12 +82,22 @@
       margin: 20px 20px 60px;
       padding: 0 60px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: -60px 20px 0;
+      width: 100%;
+    }
   }
 
   &--area {
     @media (min-width: $tablet-width) {
       margin: 15px 20px 70px;
       padding: 0 60px 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      padding: 0 60px 30px;
     }
   }
 }
@@ -85,6 +117,13 @@
   }
 }
 
+.contest-form__wrapper--info .flex-container {
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    max-width: 377px;
+  }
+}
+
 .contest-form__wrapper-name {
   margin: 0;
   padding: 40px 15px;
@@ -94,7 +133,6 @@
   text-transform: uppercase;
 
   &--area {
-
     @media (max-width: 659px) {
       margin: 0;
       padding: 10px 0 0;
@@ -142,6 +180,10 @@
       width: 100%;
       min-height: 190px;
     }
+
+    @media (min-width: $desktop-width) {
+      min-height: 127px;
+    }
   }
 
   &::placeholder {
@@ -169,7 +211,7 @@
     display: inline-block;
     /*margin: 65px 20px;*/
     margin: 0;
-    width: 300px;
+    width: 300px; /*min width & padding*/
   }
 }
 
@@ -223,3 +265,17 @@
   }
 }
 /*крнтейнеру дать модификатор*/
+.contest-form__wrapper-desktop {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 440px;
+  }
+}
+
+.contest-form__hidden-text {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}

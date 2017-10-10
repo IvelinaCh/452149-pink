@@ -5,7 +5,7 @@
     margin-bottom: 435px;
 
     @media (min-width: $tablet-width) {
-    margin-bottom: 95px;
+      margin-bottom: 95px;
     }
   }
 
@@ -78,7 +78,6 @@
   }
 
   &:last-child {
-
     @media (min-width: $desktop-width) {
       padding-right: 0;
     }

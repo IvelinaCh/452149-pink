@@ -83,6 +83,11 @@
       font-size: 50px;
       line-height: 1.2;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: -75px 200px 100px;
+      padding-bottom: 95px;/*!!!!!!!1*/
+    }
   }
 }
 

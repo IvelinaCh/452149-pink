@@ -12,6 +12,10 @@
     font-size: 18px;
     line-height: 1.667;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 215px 70px;/*!!!!!!!!!!!!*/
+  }
 }
 
 .page-main__title-form--tablet {
@@ -23,6 +27,11 @@
     padding: 0 75px 65px;/*!!!!!!!!!!!!*/
     font-size: 18px;
     line-height: 1.667;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    padding: 0;
   }
 }
 
