@@ -18,8 +18,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 22.5%;
+    margin-left: 0;
+    margin-right: -15px;
+    padding-bottom: 54px;
   }
+/*
+  @media (min-width: $desktop-width) {
+    width: 22.5%;
+  }*/
 /*
   &:nth-child(even) {
     @media (min-width: $desktop-width) {
@@ -70,5 +76,4 @@
 
 .checks .flex-container {
   flex-direction: column;
-  height: 230px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**/
 }

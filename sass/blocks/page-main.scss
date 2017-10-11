@@ -40,7 +40,7 @@
   padding: 50px 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
     padding: 0 85px;/*!!!!!!!!!!!!*/
     font-size: 18px;
     line-height: 1.667;
@@ -61,6 +61,10 @@
   margin: 0;
   padding: 5px 20px 10px 20px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 20px 10px 30px;
+  }
 }
 
 .page-main__blockquote-wrapper {
@@ -102,12 +106,13 @@
 
   &:not(:first-child) {
     @media (min-width: $tablet-width) {
-      width: 50%;
+      width: 45.45%;
+      box-sizing: border-box;
     }
   }
 
   &:first-child {
-    margin: 0 0 22px;
+    margin: 0 0 22px 0;
     background-color: transparent;
 
     &:first-child .page-main__photography {
@@ -115,6 +120,18 @@
         width: 100%;
         height: 510px;
       }
+    }
+  }
+
+  &:nth-child(2n) {
+    @media (min-width: $tablet-width) {
+      margin: 0 10px 20px 20px;
+    }
+  }
+
+  &:not(:first-child):nth-child(2n + 1) {
+    @media (min-width: $tablet-width) {
+      margin: 0 20px 20px 10px;
     }
   }
 }
@@ -143,6 +160,11 @@
   text-transform: uppercase;
   text-align: left;
 
+  @media (min-width: $tablet-width) {
+    bottom: 100px;
+    left: 250px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -160,6 +182,12 @@
   font-size: 14px;
   line-height: 2.143;
   color: $darkblue;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 15px 70px;
+    font-size: 18px;
+    line-height: 1.667;
+  }
 }
 
 .page-main__effect {

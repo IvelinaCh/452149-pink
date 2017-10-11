@@ -49,6 +49,14 @@
       width: 100%;
     }
   }
+
+  &--box {
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 60px;
+    }
+  }
 }
 
 .contest-form__label {
@@ -91,7 +99,7 @@
 
   &--area {
     @media (min-width: $tablet-width) {
-      margin: 15px 20px 70px;
+      margin: 20px 20px 70px;
       padding: 0 60px 40px;
     }
 
@@ -277,5 +285,17 @@
 .contest-form__hidden-text {
   @media (max-width: 1199px) {
     display: none;
+  }
+}
+
+.contest-form__box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    max-width: 260px;
   }
 }
