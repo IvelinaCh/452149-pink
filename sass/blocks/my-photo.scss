@@ -8,6 +8,11 @@
     padding: 55px 20px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 80px;
+    margin: 0 130px 90px;
+  }
 }
 
 .my-photo__edit {
@@ -27,11 +32,20 @@
       margin-left: 0;
       padding-bottom: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -10px;
+      padding-bottom: 0;
+    }
   }
 
   &--fill {
     @media (min-width: $tablet-width) {
       padding-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
     }
   }
 
@@ -46,6 +60,11 @@
     width: 24px;
     height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 46px;
+    height: 46px;
+  }
 }
 
 .my-photo__edit--fill svg {
@@ -58,6 +77,11 @@
       fill: $rose;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
+    height: 44px;
+  }
 }
 
 .my-photo__edit--contrast svg {
@@ -68,6 +92,11 @@
     path {
       fill: $rose;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34px;
+    height: 34px;
   }
 }
 
@@ -94,6 +123,10 @@
     @media (min-width: $tablet-width) {
       margin: 0 0 0 45px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 0 80px;
+    }
   }
 }
 
@@ -110,14 +143,34 @@
     margin-bottom: 23px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 185px;
+    margin-bottom: 0;
+  }
+
   &:last-child {
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: auto;
     }
   }
 
   &:disabled {
     color: $darkengray;
+  }
+}
+
+.my-photo__wrapper-button {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -133,6 +186,10 @@
       top: 5px;
       left: 135px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 90px;
+    }
   }
 
   &:nth-of-type(2)::after {
@@ -140,12 +197,34 @@
       top: 5px;
       left: 15px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+      left: 265px;
+    }
   }
 
   &:nth-of-type(3)::after {
     @media (min-width: $tablet-width) {
       top: 5px;
       left: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 10px;
+      left: 175px;
+    }
+  }
+
+  &:nth-of-type(2)::before {
+    @media (min-width: $desktop-width) {
+      top: 18px;
+    }
+  }
+
+  &:nth-of-type(3)::before {
+    @media (min-width: $desktop-width) {
+      top: 15px;
     }
   }
 
@@ -162,6 +241,12 @@
       top: 10px;
       right: -10px;
       width: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 290px;
+      top: 10px;
+      left: 20px;
     }
   }
 

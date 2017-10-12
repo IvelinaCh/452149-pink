@@ -72,6 +72,14 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.page-footer__logo-copyright {
+  margin-left: 10px;
 }
 
 .page-footer__bottom {

@@ -45,7 +45,9 @@
     <main class="page-main">
       <p class="page-main__text">
         Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?
+        <span class="page-main__text page-main__text--desktop">
+          Видите, как не хватает ваших?
+        </span>
       </p>
       <ul class="page-main__photo">
         <li class="page-main__photo-item">
@@ -174,16 +176,18 @@
               </button>
               <span class="my-photo__edit my-photo__edit--range" name="range"></span>
             </div>
-            <button class="my-photo__button button my-photo__button--active" type="submit">
-              Запостить
-            </button>
-            <button class="my-photo__button button my-photo__button--active" type="reset" disabled>
-              Отмена
-            </button>
+            <div class="my-photo__wrapper-button">
+              <button class="my-photo__button button my-photo__button--active" type="submit">
+                Запостить
+              </button>
+              <button class="my-photo__button button my-photo__button--active" type="reset" disabled>
+                Отмена
+              </button>
+            </div>
           </div>
       </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__bottom">
       <a class="page-footer__logo-href" href="index.html">
         <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
       </a>
@@ -205,7 +209,7 @@
         </li>
       </ul>
       <p class="page-footer__copyright">
-        Разработано
+        Разработано 
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img class="page-footer__logo-copyright" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип html академии">
         </a>

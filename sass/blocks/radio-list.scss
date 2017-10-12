@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 52px 70px;
+    padding: 5px 0 47px 70px;
   }
 
   &:last-child {
@@ -44,7 +44,7 @@
   &::before {
     width: 35px;
     height: 35px;
-    top: -5px;
+    top: 0;
     left: -10px;
     background-color: $white;
     border: 2px solid $ligtergray;
@@ -59,7 +59,7 @@
     display: none;
     width: 15px;
     height: 15px;
-    top: 7px;
+    top: 12px;
     left: 2px;
     background-color: $rose;
     border-radius: 50%;

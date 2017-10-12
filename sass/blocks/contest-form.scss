@@ -16,6 +16,7 @@
 .contest-form .container {
   @media (min-width: $tablet-width) {
     width: 620px;
+    background-color: $white;
   }
 
   &--radio {
@@ -27,6 +28,18 @@
   &--checks {
     @media (min-width: $desktop-width) {
       width: 100%;
+    }
+  }
+
+  &:nth-of-type(1) {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: $tablet-width) {
+      order: 2;
     }
   }
 }
@@ -106,6 +119,25 @@
     @media (min-width: $desktop-width) {
       width: 100%;
       padding: 0 60px 30px;
+      margin-top: 15px;
+    }
+  }
+
+  &:nth-of-type(1) {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media (min-width: $tablet-width) {
+      order: 5;
     }
   }
 }
@@ -115,6 +147,10 @@
     order: 1;
     margin: 0 0 27px 20px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
   }
 }
 
@@ -128,7 +164,7 @@
 .contest-form__wrapper--info .flex-container {
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    max-width: 377px;
+    width: 377px;
   }
 }
 
@@ -204,8 +240,8 @@
 
 .contest-form__button {
   margin: 0 0 35px;
-  padding: 16px 0 17px;
-  width: 280px;
+  padding: 16px 45px 17px;
+  max-width: 280px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -217,9 +253,10 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    /*margin: 65px 20px;*/
+    padding: 16px 55px 17px;
     margin: 0;
-    width: 300px; /*min width & padding*/
+    max-width: 300px;
+    order: 6;
   }
 }
 
@@ -232,13 +269,14 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin: 0;
+    order: 7;
   }
 
   &--star {
     color: $rose;
   }
 }
-
+/*
 @media (min-width: $tablet-width) {
   .contest-form__wrapper:nth-of-type(1) {
     order: 1;
@@ -271,14 +309,14 @@
   .contest-form__text {
     order: 7;
   }
-}
+}*/
 /*крнтейнеру дать модификатор*/
 .contest-form__wrapper-desktop {
   margin: 0;
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    width: 440px;
+    width: 450px;
   }
 }
 
@@ -297,5 +335,18 @@
 
   @media (min-width: $desktop-width) {
     max-width: 260px;
+  }
+}
+
+.contest-form__box--info {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

@@ -73,6 +73,11 @@
     line-height: 1.2;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: -45px 300px 90px;/*!!!!!!!*/
+    padding: 0 75px 100px;
+  }
+
   &--text {
     margin: 0 0 50px;
     padding: 30px 25px 53px;
@@ -142,7 +147,7 @@
   border-radius: 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 50px;
+    padding: 12px 40px;
   }
 
   @media (min-width: $desktop-width) {
