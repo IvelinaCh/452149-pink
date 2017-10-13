@@ -75,6 +75,16 @@
   padding: 5px 20px 10px 20px;
   text-align: left;
 
+  &--panaram {
+    padding-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 15px 20px 10px 30px;
   }
@@ -101,6 +111,10 @@
     padding: 10px 0 20px;
     background-color: $lightgray;
 
+    @media (min-width: $tablet-width) {
+      min-height: 90px;
+    }
+
     &::before {
       position: absolute;
       top: -137px;
@@ -115,7 +129,7 @@
       background-color: $rose;
 
       @media (min-width: $tablet-width) {
-        top: -453px;
+        top: -453px;/*!!!!!!!!!*/
         right: 0;
       }
     }
@@ -215,9 +229,17 @@
 }
 
 .page-main__photo-text {
-  margin: -6px 0 0;
+  margin: -6px 0 10px;
   padding: 0;
   line-height: 24px;
+
+  &--panaram {
+    margin: -6px 0 0;
+
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
 }
 
 .page-main__stat-like {
@@ -228,6 +250,12 @@
   color: $rose;
   text-transform: uppercase;
   text-align: left;
+
+  &--panaram {
+    @media (min-width: $tablet-width) {
+      margin-left: auto;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -265,6 +293,15 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+  }
+
+  &--panaram {
+    margin: 15px 0 0 -15px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-right: -25px;
+    }
   }
 }
 
