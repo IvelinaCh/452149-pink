@@ -85,27 +85,39 @@
 }
 
 .page-main__blockquote-wrapper {
-  position: relative;
-  margin: -10px 20px 0;
-  padding: 10px 0 0;
-  background-color: $lightgray;
+  padding: 0;
+  margin: 0;
 
-  &::before {
-    position: absolute;
-    top: -137px;
-    right: 0;
-    padding: 6px 20px;
-    content: "Панорама дня";
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 24px;
-    color: $white;
-    text-transform: uppercase;
-    background-color: $rose;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 125px;
+  }
 
-    @media (min-width: $tablet-width) {
-      top: -453px;
+  &--panaram {
+    position: relative;
+    margin: -10px 20px 0;
+    padding: 10px 0 20px;
+    background-color: $lightgray;
+
+    &::before {
+      position: absolute;
+      top: -137px;
       right: 0;
+      padding: 6px 20px;
+      content: "Панорама дня";
+      font-family: "Open Sans Bold", "Arial", sans-serif;
+      font-size: 12px;
+      line-height: 24px;
+      color: $white;
+      text-transform: uppercase;
+      background-color: $rose;
+
+      @media (min-width: $tablet-width) {
+        top: -453px;
+        right: 0;
+      }
     }
   }
 }
@@ -127,10 +139,12 @@
 
 .page-main__photo-item {
   padding: 0;
-  margin: 0 20px 22px;
+  margin: 0 20px 23px;
   background-color: $lightgray;
 
   &:not(:first-child) {
+    padding-bottom: 20px;
+
     @media (min-width: $tablet-width) {
       width: 45.45%;
       box-sizing: border-box;
@@ -142,7 +156,7 @@
   }
 
   &:first-child {
-    margin: 0 0 22px 0;
+    margin: 0 0 23px 0;
     background-color: transparent;
 
     @media (min-width: $desktop-width) {
@@ -206,10 +220,9 @@
   line-height: 24px;
 }
 
-.page-main__photo-like {
-  display: inline-block;
-  position: relative;
-  margin: 0 40px 17px -50px;
+.page-main__stat-like {
+  /*position: relative;*/
+  margin: 0;
   font-size: 12px;
   line-height: 24px;
   color: $rose;
@@ -217,16 +230,19 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    bottom: 100px;
-    left: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 30px;
+    /*bottom: 100px;
+    left: 250px;*/
   }
-
+/*
   @media (min-width: $desktop-width) {
     bottom: 0;
     left: -75px;
     margin: 15px 0 23px 0;
-  }
-
+  }*/
+/*
   &::before {
     position: absolute;
     content: "";
@@ -239,6 +255,16 @@
     @media (min-width: $desktop-width) {
       left: 225px;
     }
+  }*/
+}
+
+.page-main__like {
+  border: none;
+  background-color: transparent;
+  padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
   }
 }
 
