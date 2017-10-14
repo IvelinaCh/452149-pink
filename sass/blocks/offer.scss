@@ -20,4 +20,43 @@
   line-height: 1.2;
   color: $darkblue;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 15px 0 0;
+    font-size: 40px;
+    line-height: 1.2;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 660px;
+      height: 50px;
+      background: transparent url("../img/bg-triangle-white.svg") no-repeat;
+      background-size: contain;
+      bottom: -50px;/*!!!!!!!!!!!!*/
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 35px 0 0;
+    font-size: 50px;
+
+    &::after {
+      width: 1200px;
+      height: 90px;
+      bottom: -90px;/*!!!!!!!!!!!!*/
+      left: 0;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      margin: 0 100px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 300px 30px;
+    }
+  }
 }

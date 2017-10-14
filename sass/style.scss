@@ -1,15 +1,14 @@
 @import "fonts.scss";
 @import "normalize.scss";
-@import "visually-hidden.scss";
-@import "slider.scss";
-@import "container.scss";
 @import "var.scss";
+@import "scaffolding.scss";
+@import "slider.scss";
 @import "blocks/checks.scss";
 @import "blocks/contacts.scss";
 @import "blocks/contest-form.scss";
 @import "blocks/download-list.scss";
 @import "blocks/main-nav.scss";
-/*@import "blocks/map.scss";*/
+@import "blocks/map.scss";
 @import "blocks/my-photo.scss";
 @import "blocks/offer.scss";
 @import "blocks/page-footer.scss";
@@ -21,34 +20,3 @@
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 /*@import "blocks/window-modal.scss";*/
-@viewport {
-  width: device-width;
-  zoom: 1;
-}
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  color: $darkblue;
-  text-align: center;
-  background-color: $white;
-}
-
-.button {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  border: 4px solid;
-}
-
-.caption {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.333;
-  color: $black;
-  font-weight: bold;
-}

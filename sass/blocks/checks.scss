@@ -1,3 +1,9 @@
+.checks {
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+  }
+}
+
 .checks__label {
   position: relative;
   padding: 0 0 52px 55px;
@@ -5,6 +11,28 @@
   line-height: 30px;
   color: $darkblue;
 
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: -15px;
+    padding-bottom: 54px;
+  }
+/*
+  @media (min-width: $desktop-width) {
+    width: 22.5%;
+  }*/
+/*
+  &:nth-child(even) {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 20px;
+    }
+  }
+*/
   &:last-child {
     padding-bottom: 38px;
     margin-bottom: 12px;
@@ -44,4 +72,8 @@
 
 .checks__input:checked + .checks__label::after {
   display: block;
+}
+
+.checks .flex-container {
+  flex-direction: column;
 }

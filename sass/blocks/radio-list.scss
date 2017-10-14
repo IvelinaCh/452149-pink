@@ -2,6 +2,11 @@
   margin-top: -3px;
   margin-bottom: 27px;
   background-color: $lightgray;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    margin: -50px 0 0;
+  }
 }
 
 .radio-list__label {
@@ -12,8 +17,22 @@
   line-height: 30px;
   color: $darkblue;
 
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0 47px 70px;
+  }
+
   &:last-child {
     padding-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 52px;
+    }
   }
 
   &::before,
@@ -25,21 +44,29 @@
   &::before {
     width: 35px;
     height: 35px;
-    top: -5px;
+    top: 0;
     left: -10px;
     background-color: $white;
     border: 2px solid $ligtergray;
     border-radius: 50%;
+
+    @media (min-width: $desktop-width) {
+      left: 20px;
+    }
   }
 
   &::after {
     display: none;
     width: 15px;
     height: 15px;
-    top: 7px;
+    top: 12px;
     left: 2px;
     background-color: $rose;
     border-radius: 50%;
+
+    @media (min-width: $desktop-width) {
+      left: 32px;
+    }
   }
 }
 

@@ -2,6 +2,17 @@
   margin: 0 0 40px;
   padding: 20px 20px 25px;
   background-color: $lightgray;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 55px 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 60px 55px 80px;
+    margin: 0 130px 90px;
+  }
 }
 
 .my-photo__edit {
@@ -9,14 +20,83 @@
   border: none;
   background-color: transparent;
 
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+
   &--cut {
     padding-bottom: 5px;
     margin-left: 7px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -10px;
+      padding-bottom: 0;
+    }
+  }
+
+  &--fill {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--contrast {
     padding-left: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
+  }
+}
+
+.my-photo__edit--cut svg {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.my-photo__edit--fill svg {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+
+    path,
+    rect {
+      fill: $rose;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
+    height: 44px;
+  }
+}
+
+.my-photo__edit--contrast svg {
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+
+    path {
+      fill: $rose;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34px;
+    height: 34px;
   }
 }
 
@@ -29,6 +109,30 @@
   align-items: center;
   align-content: center;
   border-bottom: 1px solid $darkengray;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 40px 5px;
+    align-items: flex-start;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -20px 110px;
+  }
+
+  &--tablet {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 0 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 0 80px;
+      width: 100%;
+    }
+  }
 }
 
 .my-photo__button {
@@ -39,13 +143,101 @@
   border-radius: 35px;
   background-color: $lightgray;
 
+  @media (min-width: $tablet-width) {
+    max-width: 260px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 185px;
+    margin-bottom: 0;
+  }
+
+  &:first-child {
+    @media (min-width: $desktop-width) {
+      margin-left: 30px;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: auto;
+    }
+  }
+
   &:disabled {
     color: $darkengray;
   }
 }
 
+.my-photo__wrapper-button {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .my-photo__edit--range {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
+
+  &:nth-of-type(1)::after {
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      left: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 70px;
+    }
+  }
+
+  &:nth-of-type(2)::after {
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      left: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+      left: 245px;
+    }
+  }
+
+  &:nth-of-type(3)::after {
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      left: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 10px;
+      left: 155px;
+    }
+  }
+
+  &:nth-of-type(2)::before {
+    @media (min-width: $desktop-width) {
+      top: 18px;
+    }
+  }
+
+  &:nth-of-type(3)::before {
+    @media (min-width: $desktop-width) {
+      top: 15px;
+    }
+  }
 
   &::before {
     position: absolute;
@@ -55,6 +247,18 @@
     width: 240px;
     height: 2px;
     background-color: $black;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      right: -10px;
+      width: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 290px;
+      top: 10px;
+      left: 0;
+    }
   }
 
   &::after {
@@ -67,5 +271,18 @@
     background-color: $white;
     border: 2px solid $rose;
     border-radius: 50%;
+/*
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      right: 19px;
+    }*/
+  }
+
+  &-tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
   }
 }

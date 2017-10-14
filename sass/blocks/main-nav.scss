@@ -1,23 +1,69 @@
 .main-nav {
   background-color: $darkblue;
+
+  &--index {
+    margin-bottom: 435px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 95px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 0 130px;
+    margin-bottom: 110px;
+    box-sizing: border-box;
+  }
 }
 
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.main-nav__logo-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 22px 20px 15px;
-  border-bottom: 1px solid $black;
-  box-sizing: border-box;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .main-nav__logo {
   margin: auto;
+  margin-right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin: auto;
+      margin-right: 0;
+    }
+  }
+}
+
+.main-nav__logo-wrapper {
+  display: flex;
+  padding: 22px 20px 15px;
+  border-bottom: 1px solid $black;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 20px 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-left: 0;
+  }
 }
 
 .main-nav__item {
@@ -25,6 +71,17 @@
   border-bottom: 1px solid $black;
   border-top: 1px solid $darkgray;
   box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+    border: none;
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+    }
+  }
 }
 
 .main-nav__item-href {
@@ -34,6 +91,15 @@
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: $white;
+    text-decoration: none;
+    text-transform: none;
+  }
 }
 
 .main-nav__toggle {
@@ -51,5 +117,9 @@
     width: 24px;
     height: 32px;
     background: transparent url("../img/icon-menu-cross.svg") no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
