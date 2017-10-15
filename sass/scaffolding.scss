@@ -53,8 +53,16 @@ input[type="radio"].visually-hidden {
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 100%;
     /*padding: 0 120px;*/
+  }
+}
+
+.contain-desktop {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 

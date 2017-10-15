@@ -14,7 +14,6 @@
     padding: 0 130px;
     margin-bottom: 110px;
     box-sizing: border-box;
-    background-color: rgba(31, 40, 52, 0.3);
   }
 }
 
@@ -62,7 +61,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 31px 20px 37px;
+    padding: 26px 20px 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,6 +124,10 @@
     width: 24px;
     height: 32px;
     background: transparent url("../img/icon-menu-cross.svg") no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 45px;
   }
 
   @media (min-width: $desktop-width) {

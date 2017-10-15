@@ -325,7 +325,7 @@
 
 .page-main__effect {
   display: none;
-  margin: 0 20px 55px 330px;/*!!!!!!!!!!!!!!!*/
+  margin: 0 20px 60px 330px;/*!!!!!!!!!!!!!!!*/
   padding: 70px 0;
   background: url("../img/..") no-repeat;
   text-align: left;
@@ -335,9 +335,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 70px 120px 177px 500px;/*!!!!!!!!!!!!!!!*/
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 70px 30px 177px 375px;/*!!!!!!!!!!!!!!!*/
     background-color: $lightgray;
+    box-sizing: border-box;
   }
 }
 
@@ -348,6 +350,10 @@
   font-size: 30px;
   line-height: 1.2;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 19px;
@@ -382,5 +388,14 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 1.667;
+  }
+}
+
+.page-main__desktop-wrap {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: $lightgray;
   }
 }

@@ -1,6 +1,10 @@
 .price {
-  margin-top: -55px;
+  margin-top: -58px;
   background-color: $lightgray;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+  }
 }
 
 .price-list {
@@ -40,6 +44,7 @@
 .price-list__header {
   margin: 0;
   padding: 16px 75px 20px;
+  max-width: 280px;
   background-color: $darkblue;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -47,19 +52,20 @@
   color: $white;
   text-transform: uppercase;
   border: 2px solid $ligtergray;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 15px 20px 5px;
     font-size: 16px;
     line-height: 1.875;
-    min-width: 113px;
+    min-width: 155px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 20px 65px;
     font-size: 18px;
     line-height: 1.667;
-    min-width: 105px;
+    min-width: 235px;
   }
 
   &--usd {

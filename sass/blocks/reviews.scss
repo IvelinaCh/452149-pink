@@ -18,8 +18,9 @@
     height: 40px;
     background: transparent url("../img/bg-triangle-white.svg") no-repeat;
     background-size: contain;
-    bottom: -40px;
+    bottom: -63px;
     left: 0;
+    z-index: 3;
 
     @media (min-width: $tablet-width) {
       width: 100%;

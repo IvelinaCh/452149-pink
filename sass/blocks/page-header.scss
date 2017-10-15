@@ -134,3 +134,12 @@
     padding: 10px 25px;
   }
 }
+
+.page-header__desktop-wrap {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(31, 40, 52, 0.3);
+  }
+}

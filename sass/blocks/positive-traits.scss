@@ -36,14 +36,14 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 320px;
+    max-width: 315px;
     margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 940px;
+    max-width: 880px;
     margin: 273px 126px 0;
-    padding-right: 20px;
+    padding: 0 27px;
     display: flex;
     justify-content: space-between;
   }
@@ -66,5 +66,11 @@
     font-size: 18px;
     line-height: 1.667;
     margin-top: 25px;
+  }
+}
+
+.positive-traits .contain-desktop {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
   }
 }
