@@ -5,43 +5,16 @@
   background-repeat: no-repeat;
   background-position: left 39.5%, center top;
 
-  @media (min-width: $desktop-width) {
-    background-size: auto, cover;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/iphone-6 copy.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-position: left 100%, center top;
   }
 
-  /*&::after {
-    position: absolute;
-    content: "";
-    bottom: 243px;
-    left: 0;*/
-    /*width: 320px;
-    height: 314px;*/
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      /*bottom: 0;
-      left: -20px;
-      width: 660px;
-      height: 545px;*/
-      background-image: url("../img/iphone-6 copy.png"),
-      url("../img/bg-back-mobile@1x.jpg");
-      background-position: left 100%, center top;
-    }
-
-    @media (min-width: $desktop-width) {
-      /*bottom: 0;
-      left: 55%;*/
-      background-position: 55% bottom, center top;
-    }
-
-}
-/*
-.page-header--index {
-  background-color: $darkblue;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}*/
+  @media (min-width: $desktop-width) {
+    background-size: auto, cover;
+    background-position: 55% bottom, center top;
+  }
 
 .page-header__text {
   display: none;
