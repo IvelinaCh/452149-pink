@@ -336,7 +336,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 70px 120px 180px 500px;/*!!!!!!!!!!!!!!!*/
+    padding: 70px 120px 177px 500px;/*!!!!!!!!!!!!!!!*/
     background-color: $lightgray;
   }
 }
@@ -350,7 +350,7 @@
   color: $black;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 }
 
@@ -370,7 +370,8 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 1.667;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    padding: 0 26px 5px 0;
   }
 }
 

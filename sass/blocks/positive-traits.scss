@@ -12,7 +12,7 @@
     display: flex;
     background-position-x: 5%;
     background-position-y: 0;
-    background-size: contain;
+    /*background-size: contain;*/
     text-align: left;
   }
 
@@ -42,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 940px;
-    margin: 310px 120px 0;
+    margin: 273px 126px 0;
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
@@ -65,5 +65,6 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 1.667;
+    margin-top: 25px;
   }
 }
