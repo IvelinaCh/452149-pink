@@ -7,14 +7,15 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 3px;
     padding: 0 85px;/*!!!!!!!!!!!!*/
     font-size: 18px;
     line-height: 1.667;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 215px 70px;/*!!!!!!!!!!!!*/
+    padding: 0 215px 65px;/*!!!!!!!!!!!!*/
+    margin-bottom: 0;
   }
 }
 
@@ -36,11 +37,11 @@
 }
 
 .page-main__text {
-  margin: 47px 0 0 0;
-  padding: 50px 35px;
+  margin: 0;
+  padding: 45px 35px 49px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 78px;
+    margin: 47px 0 78px 0;
     padding: 0 85px;/*!!!!!!!!!!!!*/
     font-size: 18px;
     line-height: 1.667;
@@ -72,7 +73,7 @@
 
 .page-main__blockquote {
   margin: 0;
-  padding: 5px 20px 10px 20px;
+  padding: 5px 20px 11px 20px;
   text-align: left;
 
   &--panaram {
@@ -113,6 +114,14 @@
 
     @media (min-width: $tablet-width) {
       min-height: 90px;
+      margin: -10px 20px 27px;
+      padding: 10px 0 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 86px;
+      margin: -10px 20px 27px;
+      padding: 10px 0 0;
     }
 
     &::before {
@@ -153,8 +162,12 @@
 
 .page-main__photo-item {
   padding: 0;
-  margin: 0 20px 23px;
+  margin: 0 20px 20px;
   background-color: $lightgray;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 20px 23px;
+  }
 
   &:not(:first-child) {
     padding-bottom: 20px;
@@ -166,12 +179,17 @@
 
     @media (min-width: $desktop-width) {
       width: 30.55%;
+      margin-bottom: 54px;
     }
   }
 
   &:first-child {
-    margin: 0 0 23px 0;
+    margin: 0 0 19px 0;
     background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 23px 0;
+    }
 
     @media (min-width: $desktop-width) {
       width: 100%;
@@ -203,19 +221,19 @@
 
   &:nth-child(3n) {
     @media (min-width: $desktop-width) {
-      margin: 0 10px 20px 10px;
+      margin: 0 10px 54px 10px;
     }
   }
 
   &:nth-child(3n+2) {
     @media (min-width: $desktop-width) {
-      margin: 0 10px 20px 20px;
+      margin: 0 10px 54px 20px;
     }
   }
 
   &:nth-child(3n+4) {
     @media (min-width: $desktop-width) {
-      margin: 0 20px 20px 10px;
+      margin: 0 20px 54px 10px;
     }
   }
 }
@@ -229,12 +247,12 @@
 }
 
 .page-main__photo-text {
-  margin: -6px 0 10px;
+  margin: -4px 0 0;
   padding: 0;
   line-height: 24px;
 
   &--panaram {
-    margin: -6px 0 0;
+    margin: -3px 0 0;
 
     @media (min-width: $tablet-width) {
       order: 4;
@@ -319,7 +337,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 15px 65px;
+    padding: 7px 15px 65px;
   }
 }
 

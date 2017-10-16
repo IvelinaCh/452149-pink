@@ -1,10 +1,19 @@
 .slider {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .slider__list {
   width: 840px;
   box-sizing: border-box;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .slider__toggle {

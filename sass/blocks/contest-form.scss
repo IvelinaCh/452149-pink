@@ -28,6 +28,7 @@
   &--checks {
     @media (min-width: $desktop-width) {
       width: 100%;
+      margin-bottom: 7px;
     }
   }
 
@@ -55,11 +56,12 @@
       justify-content: space-between;
       align-items: center;
       order: 6;
-      margin: 65px 20px 50px;
+      margin: 69px 20px 50px;
     }
 
     @media (min-width: $desktop-width) {
       width: 100%;
+      margin: 67px 20px 44px;
     }
   }
 
@@ -90,6 +92,10 @@
   margin-bottom: 15px;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
+
   &:not(.without) {
     @media (min-width: $tablet-width) {
       background-color: $white;
@@ -100,17 +106,19 @@
 
   &--info {
     @media (min-width: $tablet-width) {
-      margin: 20px 20px 60px;
+      margin: 18px 20px 60px;
       padding: 0 60px;
     }
 
     @media (min-width: $desktop-width) {
-      margin: -60px 20px 0;
+      margin: -46px 20px 0;
       width: 100%;
     }
   }
 
   &--area {
+    margin-bottom: 18px;
+
     @media (min-width: $tablet-width) {
       margin: 20px 20px 70px;
       padding: 0 60px 40px;
@@ -177,17 +185,34 @@
   text-transform: uppercase;
 
   &--area {
+    padding: 38px 15px 40px;
+
     @media (max-width: 659px) {
       margin: 0;
       padding: 10px 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 38px 15px 36px;
     }
   }
 
   &--tablet {
     display: none;
+    padding: 39px 15px;
 
     @media (min-width: $tablet-width) {
       display: inline;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 37px 15px 35px;
+    }
+  }
+
+  &--radio {
+    @media (min-width: $tablet-width) {
+      padding: 40px 24px 39px;
     }
   }
 }
@@ -239,7 +264,7 @@
 }
 
 .contest-form__button {
-  margin: 0 0 35px;
+  margin: 0 0 36px;
   padding: 16px 45px 17px;
   max-width: 280px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -253,7 +278,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    padding: 16px 55px 17px;
+    padding: 16px 57px 17px;
     margin: 0;
     max-width: 300px;
     order: 6;
@@ -315,6 +340,10 @@
   margin: 0;
   padding: 0 10px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     width: 450px;
     padding: 0;
@@ -342,7 +371,11 @@
 .contest-form__box--info {
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;

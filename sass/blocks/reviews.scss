@@ -40,12 +40,16 @@
 
 .reviews__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 45px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 0 0;
   }
 }
 
@@ -67,7 +71,7 @@
   @media (min-width: $desktop-width) {
     min-width: 960px;/*!!!!!!!!!!!!!!!!!!!!*/
     padding: 125px 100px 25px;
-    margin: 0 100px;
+    margin: 0;
     box-sizing: border-box;
   }
 }

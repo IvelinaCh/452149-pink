@@ -8,8 +8,9 @@
   </head>
   <body class="contain">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__logo-wrapper">
+    <div class="page-header__desktop-wrap">
+      <nav class="main-nav contain-desktop">
+        <div class="main-nav__logo-wrapper main-nav__logo-wrapper--close main-nav__logo-wrapper--nojs">
           <a class="main-nav__logo-href" href="index.html">
             <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
           </a>
@@ -23,7 +24,7 @@
             <span class="visually-hidden">Закрыть меню</span>
           </button>
         </div>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--close main-nav__list--nojs">
           <li class="main-nav__item">
             <a class="main-nav__item-href" href="index.html">Главная</a>
           </li>
@@ -38,11 +39,12 @@
           </li>
         </ul>
       </nav>
+    </div>
       <p class="page-header__title page-header__title--text">
         Конкурс на самое безбашенное путешествие с Пинк
       </p>
     </header>
-    <main class="page-main">
+    <main class="page-main contain-desktop">
       <h1 class="visually-hidden">Данные для участия</h1>
         <p class="page-main__title-form">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
@@ -127,7 +129,7 @@
           </fieldset>
           <div class="container container--radio">
           <fieldset class="contest-form__wrapper radio-list">
-            <legend class="contest-form__wrapper-name">
+            <legend class="contest-form__wrapper-name contest-form__wrapper-name--radio">
               С каким приложением путешествовали?
             </legend>
             <div class="flex-container">
@@ -159,6 +161,7 @@
           </div>
         </form>
     </main>
+    <div class="contain-desktop">
     <footer class="page-footer page-footer__bottom">
       <a class="page-footer__logo-href" href="index.html">
         <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
@@ -184,6 +187,7 @@
         </a>
       </p>
     </footer>
+    </div>
     <section class="window-modal window-modal--message">
       <h2 class="window-modal__title">Ваша заявка отправлена</h2>
       <p class="window-modal__text">
@@ -202,5 +206,32 @@
         Ок
       </button>
     </section>
+    <script>
+  var navMain = document.querySelector('.main-nav__list');
+  var logoWrap = document.querySelector('.main-nav__logo-wrapper');
+  var close = document.querySelector('.main-nav__toggle--close');
+  var open = document.querySelector('.main-nav__toggle--open');
+
+  navMain.classList.remove('main-nav__list--nojs');
+  logoWrap.classList.remove('main-nav__logo-wrapper--nojs');
+
+  open.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav__list--close') && logoWrap.classList.contains('main-nav__logo-wrapper--close')) {
+      navMain.classList.remove('main-nav__list--close');
+      navMain.classList.add('main-nav__list--open');
+      logoWrap.classList.remove('main-nav__logo-wrapper--close');
+      logoWrap.classList.add('main-nav__logo-wrapper--open');
+    }
+  });
+
+  close.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav__list--open') && logoWrap.classList.contains('main-nav__logo-wrapper--open')) {
+      navMain.classList.add('main-nav__list--close');
+      navMain.classList.remove('main-nav__list--open');
+      logoWrap.classList.add('main-nav__logo-wrapper--close');
+      logoWrap.classList.remove('main-nav__logo-wrapper--open');
+    }
+  });
+</script>
   </body>
 </html>
