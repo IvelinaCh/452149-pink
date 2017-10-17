@@ -1,8 +1,8 @@
 .page-header {
-  background: $darkblue url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+  /*background-color: $darkblue; /* url("../img/bg-back-mobile@1x.jpg") no-repeat center top;*/
 
-  &--index {
-    background-image: url("../img/iphone-hand-mobile@1x.png"),
+  /*&--index {
+    /*background-image: url("../img/iphone-hand-mobile@1x.png"),
       url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: left 39.5%, center top;
@@ -11,16 +11,39 @@
       background-image: url("../img/iphone-6 copy.png"),
         url("../img/bg-back-mobile@1x.jpg");
       background-position: left 100%, center top;
-    }
+    }*/
 
-    @media (min-width: $desktop-width) {
+    /*@media (min-width: $desktop-width) {
       background-size: auto, cover;
       background-position: 55% bottom, center top;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-size: cover;
+    background-size: auto, cover;
+  }*/
+}
+
+.page-header__fon {
+  margin: 0;
+  padding: 435px 0 0;
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: left, center;
+  background-position-y: 106px, -70px;
+  background-color: $darkblue;
+
+  @media (min-width: $tablet-width) {
+    padding: 95px 0 0;
+    background-image: url("../img/iphone-6 copy.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-position: center 100%, center bottom;
+    background-size: auto, cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 0 0;
   }
 }
 

@@ -1,6 +1,7 @@
 .price {
   margin-top: -58px;
   background-color: $lightgray;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-top: -55px;

@@ -56,7 +56,7 @@
       justify-content: space-between;
       align-items: center;
       order: 6;
-      margin: 69px 20px 50px;
+      margin: 67px 20px 50px;
     }
 
     @media (min-width: $desktop-width) {
@@ -69,7 +69,7 @@
     @media (min-width: $desktop-width) {
       flex-direction: row;
       justify-content: space-between;
-      padding: 0 60px;
+      padding: 0 60px 0 55px;
     }
   }
 }
@@ -105,6 +105,9 @@
   }
 
   &--info {
+    padding-top: 17px;
+    padding-bottom: 12px;
+
     @media (min-width: $tablet-width) {
       margin: 18px 20px 60px;
       padding: 0 60px;
@@ -117,7 +120,7 @@
   }
 
   &--area {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       margin: 20px 20px 70px;
@@ -193,7 +196,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 38px 15px 36px;
+      padding: 35px 15px 36px;
     }
   }
 
@@ -382,5 +385,13 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+.contest-form__box .checks__label--last {
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
   }
 }

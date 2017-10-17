@@ -4,6 +4,7 @@
   margin-bottom: 80px;
   background-color: $white;
   z-index: 2;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -41,11 +42,11 @@
 .reviews__list {
   list-style: none;
   margin: 0 auto;
-  padding: 45px 20px;
+  padding: 45px 20px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-bottom: 0;
+    padding: 45px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,6 +123,13 @@
 }
 
 .reviews__toggles {
+  padding: 0 0 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 0 21px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
