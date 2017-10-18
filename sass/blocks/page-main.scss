@@ -88,6 +88,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 15px 20px 10px 30px;
+    min-height: 86px;
   }
 
   @media (min-width: $desktop-width) {
@@ -422,6 +423,8 @@
 .page-main__photo .contain-desktop--photos {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
   margin: 0 auto;
   padding: 0;
 
