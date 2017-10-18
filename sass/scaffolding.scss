@@ -8,6 +8,14 @@ body {
   color: $darkblue;
   text-align: center;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    min-width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 img {
@@ -63,6 +71,11 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
+  }
+
+  &--footer {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 

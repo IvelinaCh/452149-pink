@@ -95,8 +95,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 300px 92px;/*!!!!!!!*/
-    padding: 64px 75px 100px;
+    width: 1200px;
+    margin: 0 auto 92px;/*!!!!!!!*/
+    padding: 64px 375px 100px;
+    box-sizing: border-box;
   }
 
   &--text {
@@ -111,8 +113,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 200px 97px;
-      padding: 63px 25px 101px;
+      margin: 0 auto 97px;
+      padding: 63px 225px 101px;
     }
   }
 }
