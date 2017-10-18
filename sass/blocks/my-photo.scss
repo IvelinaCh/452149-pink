@@ -22,6 +22,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    width: 30px;
   }
 
   &--cut {
@@ -126,12 +127,12 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 0 45px;
+      margin: 0 0 0 40px;
     }
 
     @media (min-width: $desktop-width) {
       margin: 0 0 0 80px;
-      width: 100%;
+      /*width: 100%;*/
     }
   }
 }
@@ -147,6 +148,7 @@
   @media (min-width: $tablet-width) {
     max-width: 260px;
     margin-bottom: 23px;
+    margin-left: 13px;
   }
 
   @media (min-width: $desktop-width) {
