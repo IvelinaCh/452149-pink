@@ -1,4 +1,4 @@
-.page-header__fon {
+.page-header__bg {
   margin: -70px 0 0;
   padding: 70px 0 0;
   background: $darkblue url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
@@ -103,11 +103,11 @@
 
   &--text {
     margin: 0 0 50px;
-    padding: 30px 25px 53px;
+    padding: 30px 25px 55px;
 
     @media (min-width: $tablet-width) {
       margin: 40px 0 97px;/*!!!!!!!*/
-      padding-bottom: 79px;/*!!!!!!!1*/
+      padding-bottom: 83px;/*!!!!!!!1*/
       font-size: 50px;
       line-height: 1.2;
     }

@@ -40,7 +40,7 @@
         </ul>
       </nav>
     </div>
-    <div class="page-header__fon">
+    <div class="page-header__bg">
       <p class="page-header__title page-header__title--text">
         Конкурс на самое безбашенное путешествие с Пинк
       </p>
@@ -55,7 +55,7 @@
           </span>
         </p>
         <form class="page-main__form contest-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="contest-form__wrapper without">
+          <section class="contest-form__wrapper without">
           <div class="contest-form__wrapper-desktop">
             <div class="flex-container">
               <label class="contest-form__label" for="lastname">
@@ -76,12 +76,12 @@
               <input class="contest-form__input contest-form__input--text" type="text" placeholder="Ну и отчество тоже" id="patronymic" name="patronymic">
             </div>
           </div>
-          </fieldset>
+          </section>
           <div class="container container--checks">
-          <fieldset class="contest-form__wrapper checks">
-            <legend class="contest-form__wrapper-name">
+            <span class="contest-form__wrapper-name contest-form__wrapper-name--checks">
               Ваши безбашенные достижения в путешествии
-            </legend>
+            </span>
+            <section class="contest-form__wrapper checks">
               <div class="flex-container flex-container--box">
                 <div class="contest-form__box">
                   <input class="checks__input" type="checkbox" id="check1" name="check1" checked>
@@ -108,13 +108,14 @@
                   </label>
                 </div>
               </div>
-          </fieldset>
+            </section>
           </div>
-          <fieldset class="contest-form__wrapper contest-form__wrapper--info">
-          <legend class="contest-form__wrapper-name contest-form__wrapper-name--tablet">
-            Контактная информация
-          </legend>
-            <div class="contest-form__box--info">
+          <div class="container container--info">
+            <span class="contest-form__wrapper-name contest-form__wrapper-name--tablet">
+              Контактная информация
+            </span>
+            <section class="contest-form__wrapper contest-form__wrapper--info">
+              <div class="contest-form__box--info">
               <div class="flex-container">
                 <label class="contest-form__label" for="tel">
                   Номер телефона
@@ -127,13 +128,14 @@
                 </label>
                 <input class="contest-form__input contest-form__input--text" type="text" placeholder="Введите почту*" id="address" name="address" required>
               </div>
+              </div>
+            </section>
             </div>
-          </fieldset>
-          <div class="container container--radio">
-          <fieldset class="contest-form__wrapper radio-list">
-            <legend class="contest-form__wrapper-name contest-form__wrapper-name--radio">
+            <div class="container container--radio">
+            <span class="contest-form__wrapper-name contest-form__wrapper-name--radio">
               С каким приложением путешествовали?
-            </legend>
+            </span>
+            <section class="contest-form__wrapper radio-list">
             <div class="flex-container">
               <input class="radio-list__input" type="radio" id="radio1" name="radio" checked>
                 <label class="radio-list__label" for="radio1">Pink для iOS
@@ -144,15 +146,17 @@
               <input class="radio-list__input" type="radio" id="radio3" name="radio">
                 <label class="radio-list__label" for="radio3">Windows Phone
                 </label>
-              </div>
-          </fieldset>
+            </div>
+          </section>
           </div>
-          <fieldset class="contest-form__wrapper contest-form__wrapper--area">
-            <legend class="contest-form__wrapper-name contest-form__wrapper-name--area">
-              Опишите свои эмоции
-            </legend>
+          <div class="container container--area">
+          <span class="contest-form__wrapper-name contest-form__wrapper-name--area">
+            Опишите свои эмоции
+          </span>
+          <section class="contest-form__wrapper contest-form__wrapper--area">
             <textarea class="contest-form__input contest-form__input--area" id="area" name="area" minlength="1" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
+          </section>
+          </div>
           <div class="flex-container flex-container--tablet">
             <button class="contest-form__button" type="submit">
               Отправить форму
