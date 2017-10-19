@@ -133,7 +133,7 @@
 
     @media (min-width: $tablet-width) {
       margin: -49px 0 18px;
-      padding: 45px 57px 0;
+      padding: 47px 57px 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -251,7 +251,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 11px 0 32px;
+      padding: 11px 15px 32px;
     }
   }
 
@@ -285,6 +285,10 @@
     height: 64px;
 
     @media (min-width: $tablet-width) {
+      margin: 0 10px 50px 0;
+    }
+
+    @media (min-width: $desktop-width) {
       margin: 0 10px 50px 0;
     }
   }
@@ -447,9 +451,10 @@
     padding-bottom: 32px;
   }
 }
-  /*n
-.without .contest-form__input--text:last-of-type {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-  }
-}*/
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder {
+  margin: 0;
+}
