@@ -3,11 +3,11 @@
 }
 
 .page-main__title-form {
-  margin: -5px 0 30px;
+  margin: -5px 0 27px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 0 85px;/*!!!!!!!!!!!!*/
     font-size: 18px;
     line-height: 1.667;
@@ -76,6 +76,15 @@
   padding: 5px 20px 11px 20px;
   text-align: left;
 
+  @media (min-width: $tablet-width) {
+    padding: 15px 20px 10px 30px;
+    min-height: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 30px 0 30px;
+  }
+
   &--panaram {
     padding-bottom: 0;
 
@@ -83,16 +92,13 @@
       display: flex;
       flex-wrap: wrap;
       text-align: left;
+      min-height: 84px;
+      padding-bottom: 10px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    padding: 15px 20px 10px 30px;
-    min-height: 86px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 15px 30px 0 30px;
+    @media (min-width: $desktop-width) {
+      min-height: 60px;
+    }
   }
 }
 
@@ -116,7 +122,7 @@
     @media (min-width: $tablet-width) {
       min-height: 90px;
       margin: -10px 20px 50px;
-      padding: 10px 0 16px;
+      padding: 10px 0 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -254,6 +260,7 @@
 
     @media (min-width: $tablet-width) {
       order: 4;
+      margin: -13px 0 0;
     }
   }
 }
@@ -315,8 +322,7 @@
     margin: 15px 0 0 -15px;
 
     @media (min-width: $tablet-width) {
-      margin: 0;
-      margin-right: -25px;
+      margin: -10px -25px 0 0;
     }
 
     @media (min-width: $desktop-width) {

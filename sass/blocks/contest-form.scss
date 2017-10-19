@@ -27,7 +27,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 822px;
+      width: 980px;
       margin: 0;
       padding: 0;
     }
@@ -35,6 +35,10 @@
 
   &--area {
     background-color: $white;
+
+    @media (min-width: $desktop-width) {
+      width: 940px;
+    }
   }
 
   &--radio {
@@ -138,12 +142,12 @@
 
     @media (min-width: $desktop-width) {
       margin: -46px 20px 0;
-      width: 100%;
+      padding: 43px 57px 0;
     }
   }
 
   &--area {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     padding-top: 0;
 
     @media (min-width: $tablet-width) {
@@ -153,8 +157,7 @@
 
     @media (min-width: $desktop-width) {
       padding: 42px 60px 33px;
-      margin-top: -27px;
-      width: 940px;
+      margin-top: -23px;
       min-height: 215px;
       box-sizing: border-box;
     }
@@ -251,11 +254,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 11px 15px 32px;
+      padding: 8px 15px 32px;
     }
   }
 
   &--radio {
+    padding-top: 38px;
     padding-bottom: 47px;
 
     @media (min-width: $tablet-width) {
@@ -265,7 +269,7 @@
 
   &--checks {
     @media (min-width: $tablet-width) {
-      padding: 57px 15px 33px;
+      padding: 54px 15px 33px;
     }
   }
 }
@@ -309,13 +313,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 820px;
+      width: 100%;
       min-height: 127px;
     }
   }
 
   &::placeholder {
-    margin: 0;
     font-size: 18px;
     line-height: 1.667;
     color: $darkblue;
@@ -450,11 +453,4 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 32px;
   }
-}
-
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-moz-placeholder,
-:-ms-input-placeholder {
-  margin: 0;
 }

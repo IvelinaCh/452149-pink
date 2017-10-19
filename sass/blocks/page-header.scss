@@ -103,11 +103,11 @@
 
   &--text {
     margin: 0 0 50px;
-    padding: 30px 25px 55px;
+    padding: 27px 25px 55px;
 
     @media (min-width: $tablet-width) {
       margin: 40px 0 97px;/*!!!!!!!*/
-      padding-bottom: 83px;/*!!!!!!!1*/
+      padding: 30px 25px 79px;
       font-size: 50px;
       line-height: 1.2;
     }
