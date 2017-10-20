@@ -33,7 +33,7 @@
     width: 100%;
     padding-top: 78px;
     background: $lightgray url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
-    background-position: 0 0;
+    background-position: 6px 4px;
     z-index: 3;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -69,8 +69,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 880px;
-    margin: 0 126px 0;
+    min-width: 880px;
+    margin: 0 134px;
     padding: 0 27px;
     display: flex;
     justify-content: space-between;
