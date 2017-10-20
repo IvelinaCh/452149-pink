@@ -1,6 +1,10 @@
 .offer {
   position: relative;
-  padding: 5px 15px 15px;
+  padding: 5px 15px 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 15px 49px;
+  }
 
   &::after {
     position: absolute;
@@ -20,11 +24,13 @@
   line-height: 1.2;
   color: $darkblue;
   text-align: center;
+  margin: 15px 0 0;
+  padding: 10px 15px 5px;
 
   @media (min-width: $tablet-width) {
-    margin: 15px 0 0;
     font-size: 40px;
     line-height: 1.2;
+    padding: 0;
 
     &::after {
       position: absolute;
@@ -52,7 +58,7 @@
 
   &--tablet {
     @media (min-width: $tablet-width) {
-      margin: 0 100px 30px;
+      margin: 0 100px 15px;
     }
 
     @media (min-width: $desktop-width) {

@@ -3,6 +3,15 @@
   margin: -24px 0 0;
   padding: 0;
   width: 100%;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    margin: -59px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .map__iframe {
@@ -13,7 +22,7 @@
   border: 0;
 
   @media (min-width: $tablet-width) {
-    height: 365px;
+    height: 405px;
   }
 
   @media (min-width: $desktop-width) {

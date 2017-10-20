@@ -8,12 +8,13 @@
   </head>
   <body class="contain">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__logo-wrapper">
+    <div class="page-header__desktop-wrap">
+      <nav class="main-nav contain-desktop">
+        <div class="main-nav__logo-wrapper main-nav__logo-wrapper--close main-nav__logo-wrapper--nojs">
           <a class="main-nav__logo-href" href="index.html">
             <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
           </a>
-          <a class="main-nav__logo-href">
+          <a class="main-nav__logo-href" href="index.html">
             <img class="main-nav__logo main-nav__logo--tablet" src="img/logo-pink-tablet.svg" width="147" height="40" alt="Pink">
           </a>
           <button class="main-nav__toggle main-nav__toggle--open" type="button">
@@ -23,7 +24,7 @@
             <span class="visually-hidden">Закрыть меню</span>
           </button>
         </div>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--close main-nav__list--nojs">
           <li class="main-nav__item">
             <a class="main-nav__item-href" href="index.html">Главная</a>
           </li>
@@ -38,9 +39,12 @@
           </li>
         </ul>
       </nav>
+    </div>
+    <div class="page-header__bg">
       <h1 class="page-header__title">
         Фотографии пользователей
       </h1>
+    </div>
     </header>
     <main class="page-main">
       <p class="page-main__text">
@@ -49,11 +53,13 @@
           Видите, как не хватает ваших?
         </span>
       </p>
-      <ul class="page-main__photo">
-        <li class="page-main__photo-item">
+    <section class="page-main__photo">
+        <div class="page-main__photo-item page-main__photo-item--panaram panaram">
           <a class="page-main__photo-href" href="#">
-            <img class="page-main__photography" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография пользователя">
+            <img class="page-main__photography" src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
           </a>
+        </div>
+      <div class="contain-desktop contain-desktop--panaram">
           <div class="page-main__blockquote-wrapper page-main__blockquote-wrapper--panaram">
             <blockquote class="page-main__blockquote page-main__blockquote--panaram">
               <cite class="page-main__cite">Анна</cite>
@@ -73,8 +79,9 @@
               </p>
             </blockquote>
           </div>
-        </li>
-        <li class="page-main__photo-item">
+        </div>
+      <div class="contain-desktop contain-desktop--photos">
+        <div class="page-main__photo-item">
           <a class="page-main__photo-href" href="#">
             <img class="page-main__photography" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
@@ -97,8 +104,8 @@
               Нравится: 356
             </p>
           </div>
-        </li>
-        <li class="page-main__photo-item">
+        </div>
+        <div class="page-main__photo-item">
           <a class="page-main__photo-href" href="#">
             <img class="page-main__photography" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
@@ -121,8 +128,8 @@
               Нравится: 666
             </p>
           </div>
-        </li>
-        <li class="page-main__photo-item">
+        </div>
+        <div class="page-main__photo-item">
           <a class="page-main__photo-href" href="#">
             <img class="page-main__photography" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
@@ -145,8 +152,8 @@
               Нравится: 215
             </p>
           </div>
-        </li>
-        <li class="page-main__photo-item">
+        </div>
+        <div class="page-main__photo-item">
           <a class="page-main__photo-href" href="#">
             <img class="page-main__photography" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
@@ -169,8 +176,8 @@
               Нравится: 4
             </p>
           </div>
-        </li>
-        <li class="page-main__photo-item">
+        </div>
+        <div class="page-main__photo-item">
           <a class="page-main__photo-href" href="#">
             <img class="page-main__photography" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
@@ -193,8 +200,8 @@
               Нравится: 150
             </p>
           </div>
-        </li>
-        <li class="page-main__photo-item">
+        </div>
+        <div class="page-main__photo-item">
           <a class="page-main__photo-href" href="#">
             <img class="page-main__photography" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
@@ -217,12 +224,14 @@
               Нравится: 2560
             </p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+    </section>
       <p class="page-main__my-photo-text">
         Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!
       </p>
+      <div class="contain-desktop">
       <form class="page-main__my-photo my-photo" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Поделиться фото</h2>
         <img class="my-photo__photo" src="img/photo-road-mobile@1x.jpg" alt="Ваша фотография" id="u-photo">
@@ -261,7 +270,9 @@
             </div>
           </div>
       </form>
+      </div>
     </main>
+    <div class="contain-desktop">
     <footer class="page-footer page-footer__bottom">
       <a class="page-footer__logo-href" href="index.html">
         <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
@@ -290,5 +301,33 @@
         </a>
       </p>
     </footer>
+    </div>
+    <script>
+  var navMain = document.querySelector('.main-nav__list');
+  var logoWrap = document.querySelector('.main-nav__logo-wrapper');
+  var close = document.querySelector('.main-nav__toggle--close');
+  var open = document.querySelector('.main-nav__toggle--open');
+
+  navMain.classList.remove('main-nav__list--nojs');
+  logoWrap.classList.remove('main-nav__logo-wrapper--nojs');
+
+  open.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav__list--close') && logoWrap.classList.contains('main-nav__logo-wrapper--close')) {
+      navMain.classList.remove('main-nav__list--close');
+      navMain.classList.add('main-nav__list--open');
+      logoWrap.classList.remove('main-nav__logo-wrapper--close');
+      logoWrap.classList.add('main-nav__logo-wrapper--open');
+    }
+  });
+
+  close.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav__list--open') && logoWrap.classList.contains('main-nav__logo-wrapper--open')) {
+      navMain.classList.add('main-nav__list--close');
+      navMain.classList.remove('main-nav__list--open');
+      logoWrap.classList.add('main-nav__logo-wrapper--close');
+      logoWrap.classList.remove('main-nav__logo-wrapper--open');
+    }
+  });
+</script>
   </body>
 </html>

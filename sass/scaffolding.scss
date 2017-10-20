@@ -8,6 +8,14 @@ body {
   color: $darkblue;
   text-align: center;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    min-width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 img {
@@ -53,8 +61,35 @@ input[type="radio"].visually-hidden {
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 100%;
     /*padding: 0 120px;*/
+  }
+}
+
+.contain-desktop {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &--footer {
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 660px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+    }
+  }
+
+  &--contacts,
+  &--panaram {
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
   }
 }
 

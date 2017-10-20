@@ -22,6 +22,11 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    width: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
   }
 
   &--cut {
@@ -101,7 +106,7 @@
 }
 
 .my-photo__wrapper {
-  margin: 0 -20px 39px;
+  margin: 0 -20px 37px;
   padding: 30px 40px 40px;
   display: flex;
   flex-wrap: wrap;
@@ -111,13 +116,14 @@
   border-bottom: 1px solid $darkengray;
 
   @media (min-width: $tablet-width) {
+    margin: 0 -20px 40px;
     padding: 10px 40px 5px;
     align-items: flex-start;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 -20px 110px;
+    margin: 0 -20px 110px 20px;
   }
 
   &--tablet {
@@ -125,12 +131,11 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 0 45px;
+      margin: 0 0 0 40px;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 0 0 80px;
-      width: 100%;
+      /*width: 100%;*/
     }
   }
 }
@@ -165,7 +170,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: auto;
+      margin-left: 42px;
     }
   }
 
@@ -178,8 +183,13 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 13px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin: 0 0 0 40px;
     display: flex;
     justify-content: space-between;
   }
@@ -190,6 +200,10 @@
 
   @media (min-width: $tablet-width) {
     width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    /*width: 60%;*/
   }
 
   &:nth-of-type(1)::after {
@@ -271,7 +285,7 @@
     background-color: $white;
     border: 2px solid $rose;
     border-radius: 50%;
-/*
+    /*
     @media (min-width: $tablet-width) {
       top: 5px;
       right: 19px;
