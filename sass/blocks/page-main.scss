@@ -351,13 +351,17 @@
 
 .page-main__effect {
   display: none;
-  margin: 0 20px 60px 330px;/*!!!!!!!!!!!!!!!*/
-  padding: 70px 0;
-  background: url("../img/..") no-repeat;
-  text-align: left;
+  margin: 0 auto 70px;/*!!!!!!!!!!!!!!!*/
+  padding: 70px 20px 60px 330px;
+   text-align: left;
 
   @media (min-width: $tablet-width) {
     display: block;
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 202px 286px, 239px 275px;
+    background-position: 41px 71px, 23px 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -365,6 +369,7 @@
     margin: 0 auto;
     padding: 70px 30px 177px 375px;/*!!!!!!!!!!!!!!!*/
     background-color: $lightgray;
+    background-position: 33px 72px, 11px 0;
     box-sizing: border-box;
   }
 }
