@@ -50,6 +50,13 @@
   }*/
 }
 
+.main-nav__logo img {
+  @media (min-width: $tablet-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
 .main-nav__logo-wrapper {
   position: relative;
   display: flex;
