@@ -1,0 +1,74 @@
+.window-modal {
+  padding: 28px 0 0;
+  margin: 0;
+  box-shadow: 0 5px 21px 0 rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 9px 0 0;
+    width: 460px;
+    box-sizing: border-box;
+  }
+}
+
+.window-modal__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.333;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 0;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  &--error {
+    @media (min-width: $tablet-width) {
+      padding: 0 120px 0;
+    }
+  }
+}
+
+.window-modal__text {
+  padding: 0 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 1.8;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+}
+
+.window-modal__button {
+  padding: 17px 67px;
+  margin: 50px 20px;
+  width: 280px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.667;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $green;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 67px;
+    min-width: 300px;
+  }
+
+  &--ok {
+    margin: 11px 20px 49px;
+  }
+}
+
+.window-modal__button-wrap {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: $lightgray;
+}

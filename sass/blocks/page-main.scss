@@ -358,11 +358,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-image: url("../img/icon-editor-diagram-fill.svg"),
-      url("../img/icon-timer.svg");
+    background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
-    background-size: 202px 286px, 239px 275px;
-    background-position: 41px 71px, 23px 58px;
+    background-size: 239px 275px;
+    background-position: 23px 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -370,8 +369,8 @@
     margin: 0 auto;
     padding: 70px 30px 182px;
     background-color: $lightgray;
-    background-size: 252px 286px, 299px 346px;
-    background-position: 34px 55px, 10px 2px;
+    background-size: 299px 346px;
+    background-position: 10px 2px;
     box-sizing: border-box;
   }
 }
@@ -426,18 +425,22 @@
 
 .page-main__24 {
   @media (min-width: $tablet-width) {
-    padding: 91px 137px 91px 65px;
-    margin: 0;
+    padding: 34px 35px 43px 30px;
+    margin: 40px 86px 0 19px;
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 95px;
     line-height: 1;
     color: $rose;
     float: left;
+    border: 15px solid $rose;
+    border-radius: 50%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 151px 91px 61px;
+    padding: 47px 47px 56px 43px;
+    margin: 0 90px 20px 0;
     font-size: 118px;
+    border: 17px solid $rose;
   }
 }
 
@@ -449,19 +452,21 @@
   @media (min-width: $desktop-width) {
     background-color: $lightgray;
   }
+}
 
+.page-main__desktop-wrap--triangle {
   &::after {
     content: "";
     position: absolute;
     right: 0;
     left: 0;
-    top: -49px;
+    top: -28px;
     border-left: 100vw solid $white;
     border-bottom: 8vw solid transparent;
     z-index: 2;
 
     @media (min-width: $tablet-width) {
-      top: 17px;
+      top: 28px;
       border-left: 79vw solid $white;
       border-bottom: 5vw solid transparent;
     }
