@@ -11,27 +11,30 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
 
-    /*&:before,
-    &:after {
-      content: '';
-      position: absolute;
-      top: -14px;
-      width: 50%;
-      height: 117px;
-      background-color: $white;
-      z-index: 2;
+  &::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 35px;
+    background: transparent url("../img/bg-triangle-white-footer.svg") no-repeat;
+    background-size: 100%;
+    z-index: 3;
+
+    @media (min-width: $tablet-width) {
+      top: 32px;
+      width: 100%;
+      height: 90px;
     }
 
-    &:before {
-      left: 0;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PHBvbHlsaW5lIHBvaW50cz0iMjAgMjAgMCAyMCAwIDAgIiBmaWxsPSIjMDAwMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+    @media (min-width: $desktop-width) {
+      top: -24px;
+      height: 140px;
+      background-size: cover;
     }
-
-    &:after {
-      right: 0;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PHBvbHlsaW5lIHBvaW50cz0iMjAgMCAyMCAyMCAwIDIwICIgZmlsbD0iIzAwMDAwMCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+);
-    }*/
   }
 }
 

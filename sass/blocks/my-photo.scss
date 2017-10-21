@@ -22,12 +22,29 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: inline-block;
     width: 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 44px;
+      left: 6px;
+      width: 273px;
+      height: 1px;
+      background-color: $darkengray;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 60px;
+
+    &::after {
+      top: 57px;
+      left: 10px;
+      width: 410px;
+    }
   }
 
   &--cut {

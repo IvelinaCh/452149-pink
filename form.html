@@ -5,6 +5,7 @@
     <title>Конкурс</title>
     <meta name="viewport" content="width=device-width">
     <link href="css/style.css" rel="stylesheet">
+    <script src="css/picturefill.min.js"></script>
   </head>
   <body class="contain">
     <header class="page-header">
@@ -121,13 +122,13 @@
                 <label class="contest-form__label" for="tel">
                   Номер телефона
                 </label>
-                <input class="contest-form__input contest-form__input--text" type="text" placeholder="Номер, пожалуйста" id="tel" name="tel" required>
+                <input class="contest-form__input contest-form__input--text" type="tel" placeholder="Номер, пожалуйста" id="tel" name="tel" required>
               </div>
               <div class="flex-container">
-                <label class="contest-form__label" for="address">
+                <label class="contest-form__label contest-form__label--address" for="address">
                   Адрес почты
                 </label>
-                <input class="contest-form__input contest-form__input--text" type="text" placeholder="Введите почту*" id="address" name="address" required>
+                <input class="contest-form__input contest-form__input--text" type="email" placeholder="Введите почту*" id="address" name="address" required>
               </div>
               </div>
             </section>
@@ -171,7 +172,10 @@
     <div class="contain-desktop">
     <footer class="page-footer page-footer__bottom">
       <a class="page-footer__logo-href" href="index.html">
-        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        <picture class="page-footer__logo">
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        </picture>
       </a>
       <ul class="page-footer__social social">
         <li>

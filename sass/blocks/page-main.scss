@@ -9,13 +9,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;
-    padding: 0 85px;/*!!!!!!!!!!!!*/
+    padding: 0 85px;
     font-size: 18px;
     line-height: 1.667;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 215px 48px;/*!!!!!!!!!!!!*/
+    padding: 0 215px 48px;
     margin-bottom: 0;
   }
 }
@@ -26,7 +26,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin: 0;
-    padding: 0 75px 65px;/*!!!!!!!!!!!!*/
+    padding: 0 75px 65px;
     font-size: 18px;
     line-height: 1.667;
   }
@@ -43,7 +43,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 47px 0 78px 0;
-    padding: 0 85px;/*!!!!!!!!!!!!*/
+    padding: 0 85px;
     font-size: 18px;
     line-height: 1.667;
   }
@@ -368,7 +368,7 @@
   @media (min-width: $desktop-width) {
     max-width: 960px;
     margin: 0 auto;
-    padding: 70px 30px 177px;
+    padding: 70px 30px 182px;
     background-color: $lightgray;
     background-size: 252px 286px, 299px 346px;
     background-position: 34px 55px, 10px 2px;
@@ -442,11 +442,35 @@
 }
 
 .page-main__desktop-wrap {
+  position: relative;
   padding: 0;
   margin: 0;
 
   @media (min-width: $desktop-width) {
     background-color: $lightgray;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -49px;
+    border-left: 100vw solid $white;
+    border-bottom: 8vw solid transparent;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      border-left: 79vw solid $white;
+      border-bottom: 5vw solid transparent;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 25px;
+      border-left: 100vw solid $white;
+      border-bottom: 7vw solid transparent;
+    }
   }
 }
 

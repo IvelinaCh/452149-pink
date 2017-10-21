@@ -1,7 +1,7 @@
 .positive-traits {
   position: relative;
   margin: 0;
-  padding: 78px 33px 355px;
+  padding: 48px 33px 355px;
   text-align: center;
   background: $lightgray url("../img/iphone-screen-mobile@1x.png") no-repeat;
   background-position-x: 50%;
@@ -24,6 +24,26 @@
     padding-top: 0;
     text-align: center;
     background: $lightgray;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    right: 0;
+    top: -30px;
+    border-left: 100vw solid $white;
+    border-bottom: 8vw solid $lightgray;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -5px;
+      z-index: 1;
+    }
   }
 }
 

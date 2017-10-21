@@ -5,6 +5,7 @@
     <title>Фотографии</title>
     <meta name="viewport" content="width=device-width">
     <link href="css/style.css" rel="stylesheet">
+    <script src="css/picturefill.min.js"></script>
   </head>
   <body class="contain">
     <header class="page-header">
@@ -308,7 +309,10 @@
     <div class="contain-desktop">
     <footer class="page-footer page-footer__bottom">
       <a class="page-footer__logo-href" href="index.html">
-        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        <picture class="page-footer__logo">
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        </picture>
       </a>
       <ul class="page-footer__social social">
         <li>

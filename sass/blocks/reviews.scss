@@ -1,13 +1,13 @@
 .reviews {
   position: relative;
   margin: -65px 0 0;
-  margin-bottom: 80px;
+  margin-bottom: 118px;
   background-color: $white;
   z-index: 2;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin: -69px 0 0;
     font-size: 18px;
     line-height: 1.667;
   }
@@ -38,7 +38,7 @@
     }
   }*/
 }
-
+/*
 .reviews__triangle {
   position: relative;
   margin: 0;
@@ -63,7 +63,7 @@
     }
   }
 }
-
+*/
 .reviews__list {
   list-style: none;
   margin: 0 auto;

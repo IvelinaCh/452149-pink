@@ -454,3 +454,45 @@
     padding-bottom: 32px;
   }
 }
+/*
+.contest-form__box--info .contest-form__input--text {
+  @media (min-width: $tablet-width) {
+    &[type="tel"] {
+      background: url("../img/icon-phone.svg") no-repeat 95% center;
+    }
+
+    &[type="email"] {
+      background: url("../img/icon-mail.svg") no-repeat 95% center;
+    }
+  }
+}
+*/
+.contest-form__box--info .contest-form__label {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      bottom: 42px;
+      right: 0;
+      background: $ligtergray url("../img/icon-phone.svg") no-repeat center center;
+    }
+  }
+
+  &--address {
+    @media (min-width: $tablet-width) {
+      &::after {
+        background: $ligtergray url("../img/icon-mail.svg") no-repeat center center;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95%;
+  }
+}

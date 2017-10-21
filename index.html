@@ -5,6 +5,7 @@
     <title>PINK</title>
     <meta name="viewport" content="width=device-width">
     <link href="css/style.css" rel="stylesheet">
+    <script src="css/picturefill.min.js"></script>
   </head>
   <body class="contain">
     <header class="page-header page-header--index">
@@ -14,7 +15,7 @@
           <a class="main-nav__logo-href">
             <picture class="main-nav__logo">
               <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-tablet.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-tablet.svg"5>
               <img src="img/logo-pink-white-mobile.svg" width="75" height="20" alt="Pink">
             </picture>
           </a>
@@ -78,7 +79,6 @@
         <p class="offer__text">Устали от серости мегаполиса?</p>
         <p class="offer__text offer__text--tablet">Нам есть, что вам предложить!</p>
       </section>
-      <div class="offer__triangle"></div>
       <section class="positive-traits">
         <h2 class="visually-hidden">Почему Pink:</h2>
         <div class="contain-desktop contain-desktop--traits">
@@ -139,7 +139,6 @@
           </p>
         </div>
       </section>
-      <div class="reviews__triangle"></div>
       <div class="page-main__desktop-wrap">
       <section class="price contain-desktop">
         <div class="price__wrapper slider">
@@ -245,7 +244,10 @@
     <div class="contain-desktop contain-desktop--footer">
       <section class="page-footer__bottom page-footer__bottom--index">
       <a class="page-footer__logo-href" href="index.html">
-        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        <picture class="page-footer__logo">
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        </picture>
       </a>
       <ul class="page-footer__social social">
         <li>
