@@ -36,13 +36,17 @@
     position: absolute;
     right: 0;
     left: 0;
-    top: 0;
+    top: -25px;
     border-left: 100vw solid $white;
     border-bottom: 8vw solid transparent;
     z-index: 2;
 
     @media (min-width: $tablet-width) {
       top: -32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -5px;
     }
   }
 }

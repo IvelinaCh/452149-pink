@@ -32,8 +32,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 0;
-      height: 0;
+      bottom: -125px;
+      height: 125px;
+      background-size: cover;
     }
   }
 }

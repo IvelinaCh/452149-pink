@@ -49,13 +49,17 @@
     position: absolute;
     right: 0;
     left: 0;
-    top: -58px;
+    top: -80px;
     border-left: 100vw solid $white;
     border-bottom: 8vw solid transparent;
     z-index: 2;
 
     @media (min-width: $tablet-width) {
-      top: -9px;
+      top: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
     }
   }
 }
@@ -155,7 +159,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 0 21px;
+    padding: 13px 0 26px;
   }
 
   @media (min-width: $desktop-width) {
