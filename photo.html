@@ -12,10 +12,11 @@
       <nav class="main-nav contain-desktop">
         <div class="main-nav__logo-wrapper main-nav__logo-wrapper--close main-nav__logo-wrapper--nojs">
           <a class="main-nav__logo-href" href="index.html">
-            <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-          </a>
-          <a class="main-nav__logo-href" href="index.html">
-            <img class="main-nav__logo main-nav__logo--tablet" src="img/logo-pink-tablet.svg" width="147" height="40" alt="Pink">
+            <picture class="main-nav__logo">
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" alt="Pink">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-tablet.svg" alt="Pink">
+              <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+            </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--open" type="button">
             <span class="visually-hidden">Открыть меню</span>

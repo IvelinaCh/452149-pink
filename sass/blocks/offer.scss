@@ -6,7 +6,7 @@
     padding: 5px 15px 44px;
   }
 
-  &::after {
+  /*&::after {
     position: absolute;
     content: "";
     width: 320px;
@@ -22,6 +22,27 @@
       height: 78px;
       bottom: -78px;
       left: -10px;
+    }
+  }*/
+}
+
+.offer__triangle {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-left: 100vw solid $white;
+    border-bottom: 8vw solid transparent;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: -32px;
     }
   }
 }

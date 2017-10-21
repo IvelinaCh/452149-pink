@@ -125,7 +125,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 -20px 110px 20px;
+    margin: 0 0 110px;
+    padding: 10px 52px 5px 0;
+    max-width: 100%;
   }
 
   &--tablet {
@@ -133,7 +135,7 @@
     padding: 0;
 
     @media (min-width: $desktop-width) {
-      margin: 0 0 0 20px;
+      width: 420px;
     }
   }
 }
@@ -158,7 +160,7 @@
 
   &:first-child {
     @media (min-width: $desktop-width) {
-      margin-left: 30px;
+      margin-left: 10px;
     }
   }
 
@@ -186,8 +188,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    margin: 0 0 0 40px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
   }

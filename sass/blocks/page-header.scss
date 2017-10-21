@@ -26,6 +26,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 
@@ -62,7 +63,8 @@
       padding: 218px 0 0;
       background-image: url("../img/iphone-hand-desktop@1x.png"),
         url("../img/bg-back-desktop@1x.jpg");
-      background-position: 147px 100%, center bottom;
+      background-position: 74% 100%, center bottom;
+      background-size: 1050px auto, cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png"),

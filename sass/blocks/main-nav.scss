@@ -39,11 +39,7 @@
   margin: auto;
   margin-right: 0;
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  &--tablet {
+  /*&--tablet {
     display: none;
 
     @media (min-width: $tablet-width) {
@@ -51,7 +47,7 @@
       margin: auto;
       margin-right: 0;
     }
-  }
+  }*/
 }
 
 .main-nav__logo-wrapper {
@@ -62,7 +58,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 20px 42px;
+    padding: 26px 20px 34px;
   }
 
   @media (min-width: $desktop-width) {
