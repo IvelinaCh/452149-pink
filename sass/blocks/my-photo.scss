@@ -5,12 +5,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 55px 20px;
+    justify-content: space-between;
+    padding: 55px 20px 43px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 60px 55px 80px;
+    padding: 55px 60px 47px 80px;
     margin: 0 130px 90px;
   }
 }
@@ -21,12 +22,29 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: inline-block;
     width: 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 44px;
+      left: 6px;
+      width: 273px;
+      height: 1px;
+      background-color: $darkengray;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 60px;
+
+    &::after {
+      top: 57px;
+      left: 10px;
+      width: 410px;
+    }
   }
 
   &--cut {
@@ -116,26 +134,25 @@
   border-bottom: 1px solid $darkengray;
 
   @media (min-width: $tablet-width) {
-    margin: 0 -20px 40px;
-    padding: 10px 40px 5px;
+    margin: 0 0 40px;
+    padding: 10px 0 5px;
+    max-width: 255px;
     align-items: flex-start;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 -20px 110px 20px;
+    margin: 0 0 110px;
+    padding: 10px 52px 5px 0;
+    max-width: 100%;
   }
 
   &--tablet {
     margin: 0;
     padding: 0;
 
-    @media (min-width: $tablet-width) {
-      margin: 0 0 0 40px;
-    }
-
     @media (min-width: $desktop-width) {
-      /*width: 100%;*/
+      width: 420px;
     }
   }
 }
@@ -160,7 +177,7 @@
 
   &:first-child {
     @media (min-width: $desktop-width) {
-      margin-left: 30px;
+      margin-left: 10px;
     }
   }
 
@@ -184,12 +201,11 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 13px;
+    max-width: 280px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    margin: 0 0 0 40px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -200,10 +216,6 @@
 
   @media (min-width: $tablet-width) {
     width: 70%;
-  }
-
-  @media (min-width: $desktop-width) {
-    /*width: 60%;*/
   }
 
   &:nth-of-type(1)::after {
@@ -285,11 +297,6 @@
     background-color: $white;
     border: 2px solid $rose;
     border-radius: 50%;
-    /*
-    @media (min-width: $tablet-width) {
-      top: 5px;
-      right: 19px;
-    }*/
   }
 
   &-tablet {

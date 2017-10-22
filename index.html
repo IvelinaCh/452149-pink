@@ -5,6 +5,7 @@
     <title>PINK</title>
     <meta name="viewport" content="width=device-width">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body class="contain">
     <header class="page-header page-header--index">
@@ -12,10 +13,11 @@
       <nav class="main-nav main-nav--index contain-desktop">
         <div class="main-nav__logo-wrapper main-nav__logo-wrapper--close main-nav__logo-wrapper--nojs">
           <a class="main-nav__logo-href">
-            <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-          </a>
-          <a class="main-nav__logo-href">
-            <img class="main-nav__logo main-nav__logo--tablet" src="img/logo-pink-tablet.svg" width="147" height="40" alt="Pink">
+            <picture class="main-nav__logo">
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="20" alt="Pink">
+            </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--open" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -79,7 +81,7 @@
       </section>
       <section class="positive-traits">
         <h2 class="visually-hidden">Почему Pink:</h2>
-        <div class="contain-desktop">
+        <div class="contain-desktop contain-desktop--traits">
         <ul class="positive-traits__list">
           <li class="positive-traits__item">
             <h3 class="caption">Поднимает настроение</h3>
@@ -98,6 +100,7 @@
       </section>
       <div class="page-main__desktop-wrap">
       <section class="page-main__effect">
+        <p class="page-main__24">24</p>
         <h2 class="page-main__effect-title">Эффект <span class="page-main__effect-24">на 24 часа!</span></h2>
         <p class="page-main__effect-text">
           Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
@@ -136,7 +139,7 @@
           </p>
         </div>
       </section>
-      <div class="page-main__desktop-wrap">
+      <div class="page-main__desktop-wrap page-main__desktop-wrap--triangle">
       <section class="price contain-desktop">
         <div class="price__wrapper slider">
           <table class="price__price-list price-list slider-list">
@@ -241,7 +244,10 @@
     <div class="contain-desktop contain-desktop--footer">
       <section class="page-footer__bottom page-footer__bottom--index">
       <a class="page-footer__logo-href" href="index.html">
-        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        <picture class="page-footer__logo">
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        </picture>
       </a>
       <ul class="page-footer__social social">
         <li>

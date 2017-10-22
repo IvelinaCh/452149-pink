@@ -1,20 +1,13 @@
 .offer {
   position: relative;
-  padding: 5px 15px 30px;
+  padding: 5px 15px 60px;
 
-  @media (min-width: $desktop-width) {
-    padding: 5px 15px 49px;
+  @media (min-width: $tablet-width) {
+    padding: 5px 15px 30px;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 40px;
-    background: transparent url("../img/bg-triangle-white.svg") no-repeat;
-    background-size: contain;
-    bottom: -40px;
-    left: 0;
+  @media (min-width: $desktop-width) {
+    padding: 5px 15px 44px;
   }
 }
 
@@ -31,17 +24,6 @@
     font-size: 40px;
     line-height: 1.2;
     padding: 0;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 660px;
-      height: 50px;
-      background: transparent url("../img/bg-triangle-white.svg") no-repeat;
-      background-size: contain;
-      bottom: -50px;/*!!!!!!!!!!!!*/
-      left: 0;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +33,7 @@
     &::after {
       width: 1200px;
       height: 90px;
-      bottom: -90px;/*!!!!!!!!!!!!*/
+      bottom: -90px;
       left: 0;
     }
   }

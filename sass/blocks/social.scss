@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin: 0 70px 25px;
+  margin: 28px 70px 25px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +13,6 @@
 
   @media (min-width: $desktop-width) {
     min-width: 177px;
-    /*margin: 0 234px;*/
   }
 }
 
