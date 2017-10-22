@@ -2,7 +2,7 @@
   margin: -70px 0 0;
   padding: 70px 0 0;
   background: $darkblue url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
-  z-index: -1;
+  z-index: 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -237,9 +237,9 @@
   position: relative;
   padding: 0;
   margin: 0;
+  z-index: 1;
 
   @media (min-width: $desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 2;
   }
 }
