@@ -11,59 +11,8 @@
     font-size: 18px;
     line-height: 1.667;
   }
-
-  /*&::after {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 40px;
-    background: transparent url("../img/bg-triangle-white.svg") no-repeat;
-    background-size: contain;
-    bottom: -63px;
-    left: 0;
-    z-index: 3;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      height: 55px;
-      bottom: -55px;
-      left: -5px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
-      height: 100px;
-      bottom: -100px;
-      left: -5px;
-    }
-  }*/
 }
-/*
-.reviews__triangle {
-  position: relative;
-  margin: 0;
-  padding: 0;
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: -80px;
-    border-left: 100vw solid $white;
-    border-bottom: 8vw solid transparent;
-    z-index: 2;
-
-    @media (min-width: $tablet-width) {
-      top: -30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 0;
-    }
-  }
-}
-*/
 .reviews__list {
   list-style: none;
   margin: 0 auto;

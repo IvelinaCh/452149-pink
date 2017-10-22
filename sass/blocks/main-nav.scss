@@ -1,18 +1,9 @@
 .main-nav {
-  /*&--index {
-    /*margin-bottom: 435px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 95px;
-    }*/
-
-
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 1200px;
     padding: 0 130px;
-    /*margin-bottom: 110px;*/
     box-sizing: border-box;
   }
 }
@@ -38,16 +29,6 @@
 .main-nav__logo {
   margin: auto;
   margin-right: 0;
-
-  /*&--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-      margin: auto;
-      margin-right: 0;
-    }
-  }*/
 }
 
 .main-nav__logo img {

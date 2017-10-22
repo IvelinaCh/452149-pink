@@ -146,7 +146,7 @@
       background-color: $rose;
 
       @media (min-width: $tablet-width) {
-        top: -453px;/*!!!!!!!!!*/
+        top: -453px;
         right: 0;
       }
     }
@@ -267,7 +267,6 @@
 }
 
 .page-main__stat-like {
-  /*position: relative;*/
   margin: 0;
   font-size: 12px;
   line-height: 24px;
@@ -285,29 +284,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px 0 30px;
-    /*bottom: 100px;
-    left: 250px;*/
   }
-  /*
-  @media (min-width: $desktop-width) {
-    bottom: 0;
-    left: -75px;
-    margin: 15px 0 23px 0;
-  }*/
-  /*
-  &::before {
-    position: absolute;
-    content: "";
-    top: 5px;
-    left: -30px;
-    width: 13px;
-    height: 12px;
-    background: url("../img/icon-heart.svg") no-repeat;
-
-    @media (min-width: $desktop-width) {
-      left: 225px;
-    }
-  }*/
 }
 
 .page-main__like {
