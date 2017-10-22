@@ -6,16 +6,15 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var runsequence = require('run-sequence');
+var run = require('run-sequence');
 var rename = require("gulp-rename");
 var del = require('del');
 var minify = require('gulp-csso');
 var svgstore = require('gulp-svgstore');
 var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
-var posthtml = require('posthtml');
+var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
-var sprite = require('gulp-sprite');
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
