@@ -437,15 +437,15 @@
     position: absolute;
     right: 0;
     left: 0;
-    top: -28px;
-    border-left: 100vw solid $white;
-    border-bottom: 8vw solid transparent;
+    top: -4px;
+    border-left: 369px solid $white;
+    border-bottom: 30px solid transparent;
     z-index: 2;
 
     @media (min-width: $tablet-width) {
-      top: 28px;
-      border-left: 79vw solid $white;
-      border-bottom: 5vw solid transparent;
+      top: 25px;
+      border-left: 680px solid $white;
+      border-bottom: 51px solid transparent;
     }
 
     @media (min-width: $desktop-width) {

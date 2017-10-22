@@ -3,7 +3,6 @@
   margin: -24px 0 0;
   padding: 0;
   width: 100%;
-  z-index: -1;
 
   @media (min-width: $tablet-width) {
     margin: -32px 0 0;
@@ -25,7 +24,7 @@
     z-index: 3;
 
     @media (min-width: $tablet-width) {
-      top: 32px;
+      top: 0;
       width: 100%;
       height: 90px;
     }
@@ -45,7 +44,7 @@
   border: 0;
 
   @media (min-width: $tablet-width) {
-    height: 405px;
+    height: 377px;
   }
 
   @media (min-width: $desktop-width) {

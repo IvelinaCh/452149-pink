@@ -31,17 +31,21 @@
     position: absolute;
     right: 0;
     top: -30px;
-    border-left: 100vw solid $white;
-    border-bottom: 8vw solid $lightgray;
+    border-left: 320px solid $white;
+    border-bottom: 31px solid $lightgray;
     z-index: 2;
 
     @media (min-width: $tablet-width) {
       top: 0;
+      border-left: 660px solid $white;
+      border-bottom: 47px solid $lightgray;
     }
 
     @media (min-width: $desktop-width) {
       top: -5px;
       z-index: 1;
+      border-left: 100vw solid $white;
+      border-bottom: 8vw solid $lightgray;
     }
   }
 }
