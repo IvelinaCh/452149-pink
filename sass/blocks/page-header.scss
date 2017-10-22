@@ -86,12 +86,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 700px;
+    width: 640px;
     height: 545px;
     top: -20px;
-    left: -40px;
+    left: 0;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-size: auto;
+    background-position-x: -40px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
