@@ -31,7 +31,7 @@ gulp.task("style", function() {
 
 gulp.task("images", function () {
   return gulp.src("img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([ 
+    .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
@@ -42,7 +42,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("img")); 
+    .pipe(gulp.dest("img"));
 });
 
 gulp.task("sprite", function () {
