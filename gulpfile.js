@@ -99,9 +99,3 @@ gulp.task("copy", function () {
 gulp.task("clean", function () {
   return del("build");
 });
-
-gulp.task("webp", function () {
-  return gulp.src("img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
-});
