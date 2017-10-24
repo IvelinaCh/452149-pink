@@ -25,9 +25,18 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: #b5b9be;
-  margin: 0 10px;
+  background-color: #dadcdf;
+  margin: 0 7px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
 }
 
 .price__slider1:checked ~ .slider__label[for="price-slider1"] {

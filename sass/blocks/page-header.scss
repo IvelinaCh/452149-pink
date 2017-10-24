@@ -72,7 +72,7 @@
 .page-header__wrapper::after {
   position: absolute;
   content: "";
-  top: -330px;
+  top: -325px;
   left: 0;
   width: 258px;
   height: 286px;
@@ -103,8 +103,8 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     height: 645px;
-    top: -11px;
-    left: 16px;
+    top: -13px;
+    left: 56px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px auto;
 
@@ -153,13 +153,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0 124px;
+    padding: 10px 0 121px;
   }
 }
 
 .page-header__title {
   margin: 0;
-  padding: 30px 75px 81px;
+  padding: 34px 75px 81px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1.21;
@@ -167,8 +167,8 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
-    margin: 40px 0 41px;
-    padding: 30px 75px 140px;
+    margin: 40px 0 43px;
+    padding: 32px 75px 140px;
     font-size: 50px;
     line-height: 1.2;
   }
@@ -176,24 +176,24 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
     margin: 0 auto 44px;
-    padding: 64px 375px 100px;
+    padding: 60px 375px 100px;
     box-sizing: border-box;
   }
 
   &--text {
     margin: 0 0 50px;
-    padding: 27px 25px 55px;
+    padding: 31px 25px 55px;
 
     @media (min-width: $tablet-width) {
       margin: 40px 0 97px;
-      padding: 30px 25px 79px;
+      padding: 30px 25px 82px;
       font-size: 50px;
       line-height: 1.2;
     }
 
     @media (min-width: $desktop-width) {
       margin: 0 auto 97px;
-      padding: 63px 225px 101px;
+      padding: 63px 225px 97px;
     }
   }
 }
@@ -230,6 +230,17 @@
     font-size: 21px;
     line-height: 0.857;
     padding: 10px 25px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $rose;
+    border-color: $white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
   }
 }
 

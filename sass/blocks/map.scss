@@ -52,3 +52,46 @@
     margin-bottom: 60px;
   }
 }
+
+.map__bg {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 421px;
+  top: -225px;
+  left: 0;
+  z-index: -1;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    bottom: 74px;
+    left: 152px;
+    background: url("../img/icon-map-marker.svg") no-repeat center center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 808px;
+    top: -422px;
+
+    &:after {
+      bottom: 214px;
+      left: 324px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 350px;/*967px;*/
+    top: -476px;
+    left: 0;
+
+    &:after {
+      /*bottom: 214px;
+      left: 324px;*/
+    }
+  }
+}

@@ -66,6 +66,15 @@
       top: 8px;
       left: 20px;
     }
+
+    &:hover,
+    &:focus {
+      border-color: $darkblue;
+    }
+
+    &:active {
+      border-color: $rose;
+    }
   }
 
   &::after {

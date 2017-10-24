@@ -61,6 +61,15 @@
     left: -10px;
     background-color: $white;
     border: 2px solid $ligtergray;
+
+    &:hover,
+    &:focus {
+      border-color: $darkblue;
+    }
+
+    &:active {
+      border-color: $rose;
+    }
   }
 
   &::after {

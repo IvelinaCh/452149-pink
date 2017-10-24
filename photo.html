@@ -19,22 +19,24 @@
             <picture class="main-nav__logo">
               <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logo-pink-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="20" alt="Pink">
             </picture>
           </a>
-          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-nav__toggle-open" width="50" height="24"><use xlink:href="#icon-menu-burger"></use></svg>
           </button>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Закрыть меню</span>
+            <svg class="main-nav__toggle-close" width="24" height="32"><use xlink:href="#icon-menu-cross"></use></svg>
           </button>
         </div>
         <ul class="main-nav__list main-nav__list--close main-nav__list--nojs">
           <li class="main-nav__item">
             <a class="main-nav__item-href" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-href">Фотографии</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__item-href main-nav__item-href--current">Фотографии</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-href" href="form.html">Конкурс</a>
@@ -78,11 +80,7 @@
               </p>
               <p class="page-main__stat-like page-main__stat-like--panaram">
                 <button class="page-main__like page-main__like--panaram" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve" fill="#d22856">
-                    <g>
-                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                    </g>
-                  </svg>
+                  <svg title="Мне нравится" width="13" height="12" fill="#d22856"><use xlink:href="#icon-heart"></use></svg>
                 </button>
                 Нравится: 215
               </p>
@@ -108,11 +106,7 @@
             </blockquote>
             <p class="page-main__stat-like">
               <button class="page-main__like" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve" fill="#d22856">
-                  <g>
-                  <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                  </g>
-                </svg>
+                <svg title="Мне нравится" width="13" height="12" fill="#d22856"><use xlink:href="#icon-heart"></use></svg>
               </button>
               Нравится: 356
             </p>
@@ -136,11 +130,7 @@
             </blockquote>
             <p class="page-main__stat-like">
               <button class="page-main__like" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve" fill="#d22856">
-                  <g>
-                  <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                  </g>
-                </svg>
+                <svg title="Мне нравится" width="13" height="12" fill="#d22856"><use xlink:href="#icon-heart"></use></svg>
               </button>
               Нравится: 666
             </p>
@@ -164,11 +154,7 @@
             </blockquote>
             <p class="page-main__stat-like">
               <button class="page-main__like" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve" fill="#d22856">
-                  <g>
-                  <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                  </g>
-                </svg>
+                <svg title="Мне нравится" width="13" height="12" fill="#d22856"><use xlink:href="#icon-heart"></use></svg>
               </button>
               Нравится: 215
             </p>
@@ -192,11 +178,7 @@
             </blockquote>
             <p class="page-main__stat-like">
               <button class="page-main__like" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve" fill="#d22856">
-                  <g>
-                  <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                  </g>
-                </svg>
+                <svg title="Мне нравится" width="13" height="12" fill="#d22856"><use xlink:href="#icon-heart"></use></svg>
               </button>
               Нравится: 4
             </p>
@@ -220,11 +202,7 @@
             </blockquote>
             <p class="page-main__stat-like">
               <button class="page-main__like" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve" fill="#d22856">
-                  <g>
-                  <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                  </g>
-                </svg>
+                <svg title="Мне нравится" width="13" height="12" fill="#d22856"><use xlink:href="#icon-heart"></use></svg>
               </button>
               Нравится: 150
             </p>
@@ -248,11 +226,7 @@
             </blockquote>
             <p class="page-main__stat-like">
               <button class="page-main__like" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve" fill="#d22856">
-                  <g>
-                  <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                  </g>
-                </svg>
+                <svg title="Мне нравится" width="13" height="12" fill="#d22856"><use xlink:href="#icon-heart"></use></svg>
               </button>
               Нравится: 2560
             </p>
@@ -272,36 +246,26 @@
           <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
           <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваша фотография" id="u-photo">
         </picture>
-          <div class="my-photo__wrapper--tablet">
+          <div class="my-photo__wrapper-tablet">
             <div class="my-photo__wrapper">
               <button class="my-photo__edit my-photo__edit--cut">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path fill="#d22856" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                </svg>
+                <svg title="Обрезать" width="48" height="48"><use xlink:href="#icon-editor-crop"></use></svg>
               </button>
                 <span class="my-photo__edit my-photo__edit--range my-photo__edit--range-tablet"></span>
               <button class="my-photo__edit my-photo__edit--fill">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <polygon fill="none" points="M0,0h48v48H0V0z"/>
-                  <path fill="#b5b9be" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                  <rect fill="#b5b9be" y="40" width="48" height="3"/>
-                </svg>
+                <svg title="Фон" width="48" height="48"><use xlink:href="#icon-editor-fill"></use></svg>
               </button>
                 <span class="my-photo__edit my-photo__edit--range my-photo__edit--range-tablet"></span>
               <button class="my-photo__edit my-photo__edit--contrast">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                  <path fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                  <path fill="#b5b9be" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                </svg>
+                <svg title="Контраст" width="32" height="32"><use xlink:href="#icon-editor-contrast"></use></svg>
               </button>
               <span class="my-photo__edit my-photo__edit--range"></span>
             </div>
             <div class="my-photo__wrapper-button">
-              <button class="my-photo__button button my-photo__button--active" type="submit">
+              <button class="my-photo__button button my-photo__button--enter" type="submit">
                 Запостить
               </button>
-              <button class="my-photo__button button my-photo__button--active" type="reset" disabled>
+              <button class="my-photo__button button my-photo__button--cancel" type="reset">
                 Отмена
               </button>
             </div>
@@ -342,32 +306,6 @@
       </p>
     </footer>
     </div>
-    <script>
-  var navMain = document.querySelector('.main-nav__list');
-  var logoWrap = document.querySelector('.main-nav__logo-wrapper');
-  var close = document.querySelector('.main-nav__toggle--close');
-  var open = document.querySelector('.main-nav__toggle--open');
-
-  navMain.classList.remove('main-nav__list--nojs');
-  logoWrap.classList.remove('main-nav__logo-wrapper--nojs');
-
-  open.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav__list--close') && logoWrap.classList.contains('main-nav__logo-wrapper--close')) {
-      navMain.classList.remove('main-nav__list--close');
-      navMain.classList.add('main-nav__list--open');
-      logoWrap.classList.remove('main-nav__logo-wrapper--close');
-      logoWrap.classList.add('main-nav__logo-wrapper--open');
-    }
-  });
-
-  close.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav__list--open') && logoWrap.classList.contains('main-nav__logo-wrapper--open')) {
-      navMain.classList.add('main-nav__list--close');
-      navMain.classList.remove('main-nav__list--open');
-      logoWrap.classList.add('main-nav__logo-wrapper--close');
-      logoWrap.classList.remove('main-nav__logo-wrapper--open');
-    }
-  });
-</script>
+    <script src="js/javascript.js"></script>
   </body>
 </html>
