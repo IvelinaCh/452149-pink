@@ -267,12 +267,12 @@
   border: 2px solid $ligtergray;
   box-sizing: border-box;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: $darkblue;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border-color: $rose;
     outline: none;
   }

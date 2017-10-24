@@ -66,15 +66,6 @@
       top: 8px;
       left: 20px;
     }
-
-    &:hover,
-    &:focus {
-      border-color: $darkblue;
-    }
-
-    &:active {
-      border-color: $rose;
-    }
   }
 
   &::after {
@@ -96,6 +87,15 @@
       left: 32px;
     }
   }
+}
+
+.radio-list__label:hover .radio-list__label::before,
+.radio-list__label:focus .radio-list__label::before {
+  border-color: $darkblue;
+}
+
+.radio-list__label:active .radio-list__label::before {
+  border-color: $rose;
 }
 
 .radio-list__input {

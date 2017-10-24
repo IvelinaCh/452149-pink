@@ -1,5 +1,6 @@
 .main-nav {
   @media (min-width: $desktop-width) {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -22,6 +23,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 34%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     background-color: transparent;
   }
 }
@@ -117,18 +123,6 @@
   border: none;
   background-color: transparent;
 
-  /*&--open {
-    width: 50px;
-    height: 24px;
-    background: transparent url("../img/icon-menu-burger.svg") no-repeat;
-  }*/
-
-  /*&--close {
-    width: 24px;
-    height: 32px;
-    background: transparent url("../img/icon-menu-cross.svg") no-repeat;
-  }*/
-
   @media (min-width: $tablet-width) {
     top: 45px;
   }
@@ -136,13 +130,24 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 .main-nav__toggle-open,
 .main-nav__toggle-close {
+  fill: $white;
+
   &:hover,
   &:focus {
     fill: $rose;
+  }
+
+  &:active {
+    fill: rgba(210, 40, 86, 0.3);
   }
 }
 

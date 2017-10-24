@@ -20,6 +20,7 @@
   margin: 0 8px 25px 0;
   border: none;
   background-color: transparent;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -83,7 +84,7 @@
   }
 }
 
-.my-photo__edit--cut svg {
+.my-photo__edit--cut .my-photo__edit-icon {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
@@ -95,15 +96,10 @@
   }
 }
 
-.my-photo__edit--fill svg {
+.my-photo__edit--fill .my-photo__edit-icon {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
-
-    path,
-    rect {
-      fill: $rose;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -112,19 +108,36 @@
   }
 }
 
-.my-photo__edit--contrast svg {
+.my-photo__edit--contrast .my-photo__edit-icon {
   @media (min-width: $tablet-width) {
     width: 16px;
     height: 16px;
-
-    path {
-      fill: $rose;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 34px;
     height: 34px;
+  }
+}
+
+.my-photo__edit-icon {
+  fill: #b5b9be;
+
+  &--current {
+    fill: $rose;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: $rose;
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $rose;
   }
 }
 

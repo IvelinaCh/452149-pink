@@ -145,5 +145,14 @@
 }
 
 .reviews__button-icon {
-  fill: black;
+  fill: #bec2c7;
+
+  &:hover,
+  &:focus {
+    fill: #a8aeb4;
+  }
+
+  &:active {
+    fill: #ebedee;
+  }
 }
