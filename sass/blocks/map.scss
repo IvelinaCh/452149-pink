@@ -70,17 +70,22 @@
     bottom: 74px;
     left: 152px;
     background: url("../img/icon-map-marker.svg") no-repeat center center;
+
+    @media (min-width: $tablet-width) {
+      bottom: 214px;
+      left: 324px;
+    }
+
+    @media (min-width: $desktop-width) {
+      /*bottom: 214px;
+      left: 324px;*/
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 660px;
     height: 808px;
     top: -422px;
-
-    &:after {
-      bottom: 214px;
-      left: 324px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -88,10 +93,5 @@
     height: 350px;/*967px;*/
     top: -476px;
     left: 0;
-
-    &:after {
-      /*bottom: 214px;
-      left: 324px;*/
-    }
   }
 }
