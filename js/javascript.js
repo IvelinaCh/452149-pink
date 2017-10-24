@@ -23,4 +23,3 @@
       logoWrap.classList.remove('main-nav__logo-wrapper--open');
     }
   });
-  
