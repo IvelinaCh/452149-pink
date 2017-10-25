@@ -23,9 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    left: 34%;
+    position: relative;
     flex-wrap: wrap;
     justify-content: flex-start;
     background-color: transparent;
@@ -63,7 +61,7 @@
   }
 
   &--tablet {
-    @media (max-width: 559px), (min-width: $desktop-width) {
+    @media (max-width: 659px), (min-width: $desktop-width) {
       display: none;
     }
   }
@@ -170,20 +168,20 @@
   &:focus {
     outline: none;
   }
-}
 
-.main-nav__toggle-open,
-.main-nav__toggle-close {
-  fill: $white;
-
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: $rose;
+    outline: none;
   }
 
-  &:active {
+  &:active svg {
     fill: rgba(210, 40, 86, 0.3);
   }
+}
+
+.main-nav__toggle svg {
+  fill: $white;
 }
 
 @media (max-width: 1199px) {

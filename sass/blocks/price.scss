@@ -154,16 +154,20 @@
   text-align: left;
   border: 2px solid $ligtergray;
   background-repeat: no-repeat;
-  background-size: 31px 21px;
-  background-position: 95% center;
+  background-size: 11%;
+  background-position: 93% center;
 
   @media (min-width: $tablet-width) {
     padding: 7px 23px 7px 15px;
     white-space: nowrap;
     text-transform: none;
     background-repeat: no-repeat;
-    background-size: 31px 21px;
+    background-size: 18%;
     background-position: 50% center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 12%;
   }
 
   &--have {

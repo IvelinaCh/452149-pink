@@ -56,21 +56,21 @@
 .map__bg {
   position: absolute;
   width: 320px;
-  height: 421px;
-  top: -225px;
+  height: 400px;
+  top: -200px;
   left: 0;
+  overflow: hidden;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
+    top: 0;
     width: 660px;
-    height: 808px;
-    top: -422px;
+    height: 377px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    height: 350px;/*967px;*/
-    top: -476px;
+    width: 1200px;
+    height: 500px;
   }
 
   &::after {
@@ -78,18 +78,23 @@
     content: "";
     width: 36px;
     height: 36px;
-    bottom: 74px;
-    left: 152px;
+    bottom: 60px;
+    left: 48%;
     background: url("../img/icon-map-marker.svg") no-repeat center center;
 
     @media (min-width: $tablet-width) {
-      bottom: 214px;
-      left: 324px;
+      bottom: 53px;
+      left: 60%;
     }
 
     @media (min-width: $desktop-width) {
-      /*bottom: 214px;
-      left: 324px;*/
+      bottom: 154px;
+      left: 56%;
     }
   }
+}
+
+.map__wrapper {
+  padding: 0;
+  position: relative;
 }
