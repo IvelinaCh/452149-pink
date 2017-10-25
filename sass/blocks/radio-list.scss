@@ -98,6 +98,15 @@
   border-color: $rose;
 }
 
+.radio-list__input:disabled + .radio-list__label::before {
+  border-color: $lightgray;
+  background-color: $ligtergray;
+}
+
+.radio-list__input:disabled + .radio-list__label {
+  color: $darkengray;
+}
+
 .radio-list__input {
   display: none;
 }

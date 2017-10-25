@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
-    padding: 35px 0 40px;
+    padding: 0 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,12 +24,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    padding: 10px 100px 43px;
+    padding: 45px 100px 43px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
-    padding: 30px 313px 43px;
+    padding: 65px 313px 43px;
   }
 }
 
@@ -139,6 +139,12 @@
 
   &--mobil {
     @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: 1199px) {
       display: none;
     }
   }

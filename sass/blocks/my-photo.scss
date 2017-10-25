@@ -223,6 +223,11 @@
       color: rgba(255, 255, 255, 0.3);
       border-color: $rose;
     }
+
+    &:disabled {
+      color: $white;
+      background-color: $ligtergray;
+    }
   }
 
   &--cancel {
@@ -237,6 +242,11 @@
       color: rgba(255, 255, 255, 0.3);
       border-color: #b5b9be;
       background-color: #b5b9be;
+    }
+
+    &:disabled {
+      color: $white;
+      background-color: $ligtergray;
     }
   }
 }

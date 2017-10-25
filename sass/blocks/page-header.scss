@@ -44,7 +44,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 205px 0 0;
+      padding: 202px 0 0;
       background-image: url("../img/bg-back-tablet@1x.jpg");
       background-position: center bottom;
       background-size: cover;
@@ -103,7 +103,7 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     height: 645px;
-    top: -13px;
+    top: -9px;
     left: 56px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px auto;
@@ -153,13 +153,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0 121px;
+    padding: 10px 0 125px;
   }
 }
 
 .page-header__title {
   margin: 0;
-  padding: 34px 75px 81px;
+  padding: 33px 75px 81px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1.21;
@@ -168,7 +168,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 40px 0 43px;
-    padding: 32px 75px 140px;
+    padding: 28px 75px 140px;
     font-size: 50px;
     line-height: 1.2;
   }
@@ -182,18 +182,18 @@
 
   &--text {
     margin: 0 0 50px;
-    padding: 31px 25px 55px;
+    padding: 31px 25px 54px;
 
     @media (min-width: $tablet-width) {
       margin: 40px 0 97px;
-      padding: 30px 25px 82px;
+      padding: 26px 25px 82px;
       font-size: 50px;
       line-height: 1.2;
     }
 
     @media (min-width: $desktop-width) {
       margin: 0 auto 97px;
-      padding: 63px 225px 97px;
+      padding: 63px 225px 101px;
     }
   }
 }
