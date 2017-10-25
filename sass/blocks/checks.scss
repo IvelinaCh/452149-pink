@@ -61,15 +61,6 @@
     left: -10px;
     background-color: $white;
     border: 2px solid $ligtergray;
-
-    &:hover,
-    &:focus {
-      border-color: $darkblue;
-    }
-
-    &:active {
-      border-color: $rose;
-    }
   }
 
   &::after {
@@ -83,6 +74,16 @@
     border-left-color: transparent;
     transform: rotate(45deg);
   }
+}
+
+
+.checks__input:hover + .checks__label::before,
+.checks__input:focus + .checks__label::before {
+  border-color: $darkblue;
+}
+
+.checks__input:active + .checks__label::before {
+  border-color: $rose;
 }
 
 .checks__input {

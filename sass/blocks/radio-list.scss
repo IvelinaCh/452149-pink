@@ -89,12 +89,12 @@
   }
 }
 
-.radio-list__label:hover .radio-list__label::before,
-.radio-list__label:focus .radio-list__label::before {
+.radio-list__input:hover + .radio-list__label::before,
+.radio-list__input:focus + .radio-list__label::before {
   border-color: $darkblue;
 }
 
-.radio-list__label:active .radio-list__label::before {
+.radio-list__input:active + .radio-list__label::before {
   border-color: $rose;
 }
 

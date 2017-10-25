@@ -99,3 +99,47 @@
     }
   }
 }
+
+.page-footer__logo-copyright {
+  width: 27px;
+  height: 34px;
+  fill: $rose;
+
+  &:hover,
+  &:focus {
+    fill: $darkblue;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.page-footer__logo-svg {
+  width: 147px;
+  height: 40px;
+  fill: $darkblue;
+
+  &:hover,
+  &:focus {
+    fill: $rose;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+
+  &--glass {
+    fill: $rose;
+
+    &:active {
+      fill: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  &--mobil {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}

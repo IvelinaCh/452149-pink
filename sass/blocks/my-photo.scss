@@ -27,7 +27,7 @@
     display: inline-block;
     width: 30px;
 
-    &::after {
+    &[type="button"]::after {
       position: absolute;
       content: "";
       top: 44px;
@@ -41,7 +41,7 @@
   @media (min-width: $desktop-width) {
     width: 60px;
 
-    &::after {
+    &[type="button"]::after {
       top: 57px;
       left: 10px;
       width: 410px;
@@ -142,6 +142,7 @@
 }
 
 .my-photo__wrapper {
+  position: relative;
   margin: 0 -20px 37px;
   padding: 30px 40px 40px;
   display: flex;
@@ -262,7 +263,7 @@
     width: 70%;
   }
 
-  &:nth-of-type(1)::after {
+  /*&:nth-of-type(1)::after {
     @media (min-width: $tablet-width) {
       top: 5px;
       left: 135px;
@@ -295,7 +296,7 @@
       top: 10px;
       left: 155px;
     }
-  }
+  }*/
 
   &:nth-of-type(2)::before {
     @media (min-width: $desktop-width) {
@@ -331,27 +332,62 @@
     }
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 52px;
-    right: 25px;
-    width: 10px;
-    height: 10px;
-    background-color: $white;
-    border: 2px solid $rose;
-    border-radius: 50%;
-
-    &:active {
-      background-color: $rose;
-    }
-  }
-
   &-tablet {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: inline-block;
+    }
+  }
+}
+
+.my-photo__range-button {
+  position: absolute;
+  content: "";
+  bottom: 28px;
+  right: 76px;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border: 2px solid $rose;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $rose;
+  }
+
+  &:nth-of-type(1) {
+    @media (min-width: $tablet-width) {
+      top: 14px;
+      right: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 70px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: $tablet-width) {
+      top: 87px;
+      left: 76px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+      left: 245px;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      left: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 10px;
+      left: 155px;
     }
   }
 }
