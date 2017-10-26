@@ -20,13 +20,15 @@
   margin: 0 8px 25px 0;
   border: none;
   background-color: transparent;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     position: relative;
     display: inline-block;
     width: 30px;
+    margin: 0 8px 23px 0;
 
-    &::after {
+    &[type="button"]::after {
       position: absolute;
       content: "";
       top: 44px;
@@ -39,8 +41,9 @@
 
   @media (min-width: $desktop-width) {
     width: 60px;
+    margin: 0 8px 25px 0;
 
-    &::after {
+    &[type="button"]::after {
       top: 57px;
       left: 10px;
       width: 410px;
@@ -75,10 +78,15 @@
   &--contrast {
     padding-left: 10px;
     padding-bottom: 20px;
+    margin: 0 0 8px 4px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 8px 25px 0;
+    }
   }
 }
 
-.my-photo__edit--cut svg {
+.my-photo__edit--cut .my-photo__edit-icon {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
@@ -90,15 +98,10 @@
   }
 }
 
-.my-photo__edit--fill svg {
+.my-photo__edit--fill .my-photo__edit-icon {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
-
-    path,
-    rect {
-      fill: $rose;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -107,14 +110,10 @@
   }
 }
 
-.my-photo__edit--contrast svg {
+.my-photo__edit--contrast .my-photo__edit-icon {
   @media (min-width: $tablet-width) {
     width: 16px;
     height: 16px;
-
-    path {
-      fill: $rose;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -123,7 +122,29 @@
   }
 }
 
+.my-photo__edit-icon {
+  fill: #b5b9be;
+
+  &--current {
+    fill: $rose;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: $rose;
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $rose;
+  }
+}
+
 .my-photo__wrapper {
+  position: relative;
   margin: 0 -20px 37px;
   padding: 30px 40px 40px;
   display: flex;
@@ -135,7 +156,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 40px;
-    padding: 10px 0 5px;
+    padding: 10px 0 7px;
     max-width: 255px;
     align-items: flex-start;
     border: none;
@@ -146,14 +167,14 @@
     padding: 10px 52px 5px 0;
     max-width: 100%;
   }
+}
 
-  &--tablet {
-    margin: 0;
-    padding: 0;
+.my-photo__wrapper-tablet {
+  margin: 0;
+  padding: 0;
 
-    @media (min-width: $desktop-width) {
-      width: 420px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 420px;
   }
 }
 
@@ -161,9 +182,9 @@
   width: 100%;
   margin-bottom: 13px;
   padding: 15px 35px;
-  color: $rose;
   border-radius: 35px;
   background-color: $lightgray;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     max-width: 260px;
@@ -191,8 +212,44 @@
     }
   }
 
-  &:disabled {
+  &--enter {
+    color: $rose;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $rose;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      border-color: $rose;
+    }
+
+    &:disabled {
+      color: $white;
+      background-color: $ligtergray;
+    }
+  }
+
+  &--cancel {
     color: $darkengray;
+
+    &:hover,
+    &:focus {
+      color: #b5b9be;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      border-color: #b5b9be;
+      background-color: #b5b9be;
+    }
+
+    &:disabled {
+      color: $white;
+      background-color: $ligtergray;
+    }
   }
 }
 
@@ -216,41 +273,6 @@
 
   @media (min-width: $tablet-width) {
     width: 70%;
-  }
-
-  &:nth-of-type(1)::after {
-    @media (min-width: $tablet-width) {
-      top: 5px;
-      left: 135px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 70px;
-    }
-  }
-
-  &:nth-of-type(2)::after {
-    @media (min-width: $tablet-width) {
-      top: 5px;
-      left: 15px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 13px;
-      left: 245px;
-    }
-  }
-
-  &:nth-of-type(3)::after {
-    @media (min-width: $tablet-width) {
-      top: 5px;
-      left: 90px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 10px;
-      left: 155px;
-    }
   }
 
   &:nth-of-type(2)::before {
@@ -287,23 +309,70 @@
     }
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 52px;
-    right: 25px;
-    width: 10px;
-    height: 10px;
-    background-color: $white;
-    border: 2px solid $rose;
-    border-radius: 50%;
-  }
-
   &-tablet {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: inline-block;
     }
+  }
+}
+
+.my-photo__range-button {
+  position: absolute;
+  content: "";
+  top: 51px;
+  right: 27px;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border: 2px solid $rose;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $rose;
+  }
+}
+
+.my-photo__edit--range:nth-of-type(1) .my-photo__range-button {
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    right: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 70px;
+  }
+}
+
+.my-photo__edit--range:nth-of-type(2) .my-photo__range-button {
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 12px;
+    left: 245px;
+  }
+}
+
+.my-photo__edit--range:nth-of-type(3) .my-photo__range-button {
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+    left: 159px;
+  }
+}
+
+.my-photo__photo {
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
   }
 }

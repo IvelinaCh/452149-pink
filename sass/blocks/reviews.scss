@@ -20,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 45px 0 0;
+    padding: 49px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,14 +47,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 940px;
-    padding: 125px 100px 25px;
+    min-width: 840px;
+    padding: 125px 20px 25px 55px;
     margin: 0 10px;
     box-sizing: border-box;
-    background-image: url("../img/icon-review-arrow-left.svg"),
-      url("../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: left 170px, right 170px;
   }
 }
 
@@ -108,10 +104,55 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 13px 0 26px;
+    padding: 16px 0 16px;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.reviews__button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin: 60px 0 0;
+    padding: 0;
+    width: 23px;
+    height: 43px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    &--back {
+      margin-left: 130px;
+    }
+
+    &--next {
+      margin-right: 130px;
+    }
+  }
+}
+
+.contain-desktop--reviews {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.reviews__button-icon {
+  fill: #bec2c7;
+
+  &:hover,
+  &:focus {
+    fill: #a8aeb4;
+  }
+
+  &:active {
+    fill: #ebedee;
   }
 }

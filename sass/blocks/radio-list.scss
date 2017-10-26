@@ -89,6 +89,24 @@
   }
 }
 
+.radio-list__input:hover + .radio-list__label::before,
+.radio-list__input:focus + .radio-list__label::before {
+  border-color: $darkblue;
+}
+
+.radio-list__input:active + .radio-list__label::before {
+  border-color: $rose;
+}
+
+.radio-list__input:disabled + .radio-list__label::before {
+  border-color: $lightgray;
+  background-color: $ligtergray;
+}
+
+.radio-list__input:disabled + .radio-list__label {
+  color: $darkengray;
+}
+
 .radio-list__input {
   display: none;
 }

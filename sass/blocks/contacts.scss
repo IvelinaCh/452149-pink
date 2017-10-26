@@ -46,6 +46,19 @@
       margin-top: 0;
     }
   }
+
+  &--mail {
+    &:hover,
+    &:focus {
+      color: $darkblue;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #bec2c7;
+      text-decoration: none;
+    }
+  }
 }
 
 .contacts__wrapper {

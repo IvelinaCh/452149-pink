@@ -76,6 +76,31 @@
   }
 }
 
+
+.checks__input:hover + .checks__label::before,
+.checks__input:focus + .checks__label::before {
+  border-color: $darkblue;
+}
+
+.checks__input:active + .checks__label::before {
+  border-color: $rose;
+}
+
+.checks__input:disabled + .checks__label::before {
+  border-color: $lightgray;
+  background-color: $ligtergray;
+}
+
+.checks__input:disabled + .checks__label::after {
+  border-color: $lightgray;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.checks__input:disabled + .checks__label {
+  color: $darkengray;
+}
+
 .checks__input {
   display: none;
 }

@@ -83,7 +83,7 @@
       justify-content: space-between;
       align-items: center;
       order: 6;
-      margin: 67px 20px 50px;
+      margin: 65px 20px 50px;
     }
 
     @media (min-width: $desktop-width) {
@@ -242,7 +242,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 8px 15px 32px;
+      padding: 9px 15px 31px;
     }
   }
 
@@ -266,6 +266,25 @@
   width: 280px;
   border: 2px solid $ligtergray;
   box-sizing: border-box;
+
+  &:hover {
+    border-color: $darkblue;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $rose;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: $lightgray;
+    background-color: $ligtergray;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -326,6 +345,21 @@
   border: none;
   box-sizing: border-box;
 
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $ligtergray;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     padding: 16px 57px 17px;
@@ -384,7 +418,7 @@
   }
 }
 
-.contest-form__box--info {
+.contest-form__box-info {
   display: block;
   margin: 0;
   padding: 0;
@@ -409,7 +443,7 @@
   }
 }
 
-.contest-form__box--info .contest-form__label {
+.contest-form__box-info .contest-form__label {
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -421,7 +455,7 @@
       width: 60px;
       height: 60px;
       bottom: 42px;
-      right: 0;
+      right: 2px;
       background: $ligtergray url("../img/icon-phone.svg") no-repeat center center;
     }
   }
@@ -436,5 +470,9 @@
 
   @media (min-width: $desktop-width) {
     width: 95%;
+
+    &::after {
+      right: 3px;
+    }
   }
 }
