@@ -100,7 +100,8 @@
 }
 
 .page-footer__logo {
-  margin: 0 0 30px;
+  display: inline-block;
+  margin: 0 0 22px;
   width: 147px;
   height: 40px;
 
@@ -120,21 +121,8 @@
   height: 40px;
   fill: $darkblue;
 
-  /*&:hover,
-  &:focus {
-    fill: $rose;
-  }*/
-
-  /*&:active {
-    fill: rgba(40, 54, 69, 0.3);
-  }*/
-
   &--glass {
     fill: $rose;
-
-    /*&:active {
-      fill: rgba(210, 40, 86, 0.3);
-    }*/
   }
 
   &--mobil {

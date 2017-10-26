@@ -368,3 +368,11 @@
     left: 159px;
   }
 }
+
+.my-photo__photo {
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+  }
+}
